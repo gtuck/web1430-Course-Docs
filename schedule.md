@@ -79,4 +79,3 @@
 | Wed Dec 3, 2025 | Calendar Event WEB 1430 VTL Fall 2025 25342 | 9:30am to 10:20am |
 |  | Assignment Fifty Points of Credit Available | due by 11:59pm |
 | Fri Dec 5, 2025 | Calendar Event WEB 1430 VTL Fall 2025 25342 | 9:30am to 10:20am |
-| Sun Dec 7, 2025 | Assignment Ch. 21 - Query a web server
