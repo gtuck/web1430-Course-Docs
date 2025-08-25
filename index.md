@@ -9,7 +9,7 @@
 #### Instructor's Information
 - **Name:** Garth Tuck
 - **Office Location:** Elizabeth Hall 371
-- **Virtual Office (Zoom):** [https://weber.zoom.us/j/8013088825]
+- **Virtual Office (Zoom):** [https://weber.zoom.us/j/8013088825](https://weber.zoom.us/j/8013088825)
 - **Virtual Office Hours:** Mon & Wed → 11:30 am–2:00 pm [by appointment only](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2ZxOHd88y9dR5ZmI1YgcfcnhVGj2lfXlknmyVUPbRtVoTjHj3OJbIADiaxM2RC9pGFkeTWF6CK?gv=true)
 - **Voice Mail & Text:** 801-308-8251
 - **Email:** [gtuck@weber.edu](mailto:gtuck@weber.edu)
