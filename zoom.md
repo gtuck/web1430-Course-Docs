@@ -1,6 +1,6 @@
 # Logging in to Zoom with SSO (Single Sign-On)
 
-This tutorial will guide you through the process of logging in to Zoom using Weber State University's Single Sign-On (SSO). Follow the steps below in order.
+This tutorial will guide you through the process of logging in to Zoom using Weber State University's Single Sign-On (SSO). Follow the steps below in order.  
 
 > **⚠️ Important:** If you skip **Step 1 (Sign Out)**, you may remain signed in with a personal Zoom account (such as Gmail).  
 > This often prevents you from joining WSU classes. Always start by signing out.
