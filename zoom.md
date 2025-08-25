@@ -2,7 +2,7 @@
 
 This tutorial will guide you through the process of logging in to Zoom using Weber State University's SSO (Single Sign-On). Follow the steps below in order.
 
-**⚠️ Important:** If you skip **Step 1 (Sign Out)**, you may remain signed in with a personal Zoom account (such as Gmail).  
+> **⚠️ Important:** If you skip **Step 1 (Sign Out)**, you may remain signed in with a personal Zoom account (such as Gmail).  
 > This often prevents you from joining WSU classes. Always start by signing out.
 
 ---
@@ -61,21 +61,20 @@ If you have issues logging in with SSO, try these steps:
    - Sign out of Zoom completely on all devices (computer, phone, tablet).  
    - Then restart Zoom and try again from Step 1.
 
-2. **Use the Correct Domain**  
+2. **Update Zoom**  
+   - Make sure your Zoom app is up to date. Outdated versions may not support SSO login correctly.
+
+3. **Use the Correct Domain**  
    - Make sure you entered `weber` (not `weber.edu`) for the company domain.  
    - It should read: `weber.zoom.us`
-
-3. **Update Zoom**  
-   - Make sure your Zoom app is up to date. Outdated versions may not support SSO login correctly.
 
 4. **Browser Pop-Up Blockers**  
    - If using Zoom in a browser, allow pop-ups — the login redirect may be blocked.
 
 5. **Still Having Problems?**  
-   - Schedule an appointment with me [appointment link](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2ZxOHd88y9dR5ZmI1YgcfcnhVGj2lfXlknmyVUPbRtVoTjHj3OJbIADiaxM2RC9pGFkeTWF6CK?gv=true).
-     or  
-   - Contact the **WSU IT Service Desk**: [https://www.weber.edu/help](https://www.weber.edu/help)  
-   - Phone: 801-626-7777  
-   - Email: csupport@weber.edu  
+   - **Schedule an appointment with me:** [Book a time here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2ZxOHd88y9dR5ZmI1YgcfcnhVGj2lfXlknmyVUPbRtVoTjHj3OJbIADiaxM2RC9pGFkeTWF6CK?gv=true)  
+   - Or contact the **WSU IT Service Desk**: [https://www.weber.edu/help](https://www.weber.edu/help)  
+     - Phone: 801-626-7777  
+     - Email: csupport@weber.edu  
 
 ---
