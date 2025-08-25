@@ -1,17 +1,16 @@
 ## Course: WEB 1430 Client Side Programming (Fall 2025)
-**Department:** School of Computing  
-**Credits:** 3 (verify)  
+**Department:** School of Computing - Web/UX  
+**Credits:** 3  
 **Delivery Mode:** Synchronous Virtual (Zoom)  
 **Meeting Times:** M, W, F – 9:30–10:20 am  
 **Location:** Virtual Classroom (Zoom in Canvas)  
-**Prerequisites:** (Add any prerequisite courses or "None")  
-**Canvas Course Home:** (Add link)  
+**Prerequisites:** (WEB 1400 or CS 1030) and CS 1400.  
 
 #### Instructor's Information
 - **Name:** Garth Tuck
 - **Office Location:** Elizabeth Hall 371
 - **Virtual Office (Zoom):** https://weber.zoom.us/j/8013088825
-- **Virtual Office Hours:** Mon & Wed → 11:30 am–2:00 pm (by appointment; schedule ahead)
+- **Virtual Office Hours:** Mon & Wed → 11:30 am–2:00 pm [by appointment only](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2ZxOHd88y9dR5ZmI1YgcfcnhVGj2lfXlknmyVUPbRtVoTjHj3OJbIADiaxM2RC9pGFkeTWF6CK?gv=true)
 - **Voice Mail & Text:** 801-308-8251
 - **Email:** [gtuck@weber.edu](mailto:gtuck@weber.edu)
 
@@ -26,7 +25,7 @@ JavaScript underpins modern web development. Skills here prepare you for framewo
 
 #### Learning Outcomes / Objectives
 By the end of the course, you should be able to:
-1. Use a professional text editor effectively (VS Code or CodePen alternatives).
+1. Use a professional text editor effectively.
 2. Declare, assign, and transform variables of primitive and reference types.
 3. Apply Boolean logic and comparison operations to control program flow.
 4. Create and manipulate objects, arrays, and nested data structures.
@@ -42,7 +41,7 @@ By the end of the course, you should be able to:
 #### Required / Free Learning Resources
 - **Primary Text:** [The JavaScript Way](https://thejsway.net/)
 - MDN Guides: [JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
-- Tooling: [CodePen](https://codepen.io), modern browser (Chrome/Firefox), VS Code (recommended)
+- Tooling: [CodePen](https://codepen.io), modern browser (Chrome/Firefox)
 
 #### Technology Requirements
 - Reliable computer capable of running a modern browser and Zoom simultaneously.
@@ -74,19 +73,11 @@ Violations fall under Academic Integrity.
 
 #### Assignments & Late Work
 - Submission via Canvas unless stated otherwise.
-- Late penalty: 10% of possible points per calendar day late (minimum grade 0%). After N days (define, e.g., 5) no submissions accepted unless prior arrangement.
+- Late penalty: 10% of possible points per calendar day late (minimum grade 0%). After 5 days no submissions accepted unless prior arrangement.
 - Technical issues are not accepted as justification without documented effort to resolve.
 
-#### Grading (Proposed Structure — adjust as finalized)
-- In-Class Practice / Participation: 10%
-- Weekly Chapter Exercises: 35%
-- Projects / Applied Labs: 25%
-- Quizzes (Including Syllabus Quiz): 10%
-- Final Practical / Cumulative Exercise: 15%
-- Professionalism / Attendance: 5%
-(Replace or adjust weights; ensure total = 100%)
-
-A = 93–100, A- = 90–92, B+ = 87–89, B = 83–86, B- = 80–82, C+ = 77–79, C = 73–76, C- = 70–72, D+ = 67–69, D = 60–66, E < 60 (modify if department scale differs).
+#### Grading
+- Weekly Chapter Assignments: 100%
 
 #### Feedback & Return Time
 Typical turnaround: small exercises 3–4 days; larger projects 7–10 days.
@@ -122,7 +113,7 @@ You may:
 1. Inspect/review educational records.
 2. Seek amendment of inaccurate records.
 3. Consent to disclosure of personally identifiable info (with FERPA exceptions).
-Directory information may include: name, major, address, phone, dates of attendance, degree(s), honors, enrollment status, and instructional videos unless you request suppression. Details: https://www.weber.edu/registrar/FERPA.html
+Directory information may include: name, major, address, phone, dates of attendance, degree(s), honors, enrollment status, and instructional videos unless you request suppression. [Learn more](https://www.weber.edu/registrar/FERPA.html)
 
 #### Student Responsibilities
 Follow standards in PPM 6-22 academically and professionally, on and off campus when representing WSU.
@@ -221,14 +212,6 @@ See Canvas for live updates; changes announced in class/Canvas.
 | Wed Dec 3, 2025 | Calendar Event WEB 1430 VTL Fall 2025 25342 | 9:30am to 10:20am |
 |  | Assignment Fifty Points of Credit Available | due by 11:59pm |
 | Fri Dec 5, 2025 | Calendar Event WEB 1430 VTL Fall 2025 25342 | 9:30am to 10:20am |
-| Sun Dec 7, 2025 | Assignment Ch. 21 - Query a web server | (time TBD) |
-
-### Campus Resources
-- Tutoring / Computer Labs: (add link)
-- Counseling & Psychological Services
-- Writing Center
-- Library Research Help
-- Accessibility / Disability Services
 
 ### Disclaimer
 Syllabus and schedule are subject to change; updated versions posted to Canvas
