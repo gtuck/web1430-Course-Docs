@@ -74,7 +74,7 @@ If you have issues logging in with SSO, try these steps:
 5. **Still Having Problems?**  
    - Schedule an appointment with me [appointment link](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2ZxOHd88y9dR5ZmI1YgcfcnhVGj2lfXlknmyVUPbRtVoTjHj3OJbIADiaxM2RC9pGFkeTWF6CK?gv=true).
      or  
-   - Contact the **WSU IT Service Desk**: [https://www.weber.edu/ITServiceDesk](https://www.weber.edu/ITServiceDesk)  
+   - Contact the **WSU IT Service Desk**: [https://www.weber.edu/help](https://www.weber.edu/help)  
    - Phone: 801-626-7777  
    - Email: csupport@weber.edu  
 
