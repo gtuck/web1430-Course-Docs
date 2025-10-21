@@ -1,10 +1,14 @@
-#### Objective:
+# Assignment: Ch. 4 & 5 - Carousel with Greetings - (in class assignment)
+
+## Description
+
+## Objective
 
 ![](https://educalingo.com/en/dic-en/carousel)![carousel.jpg]($IMS-CC-FILEBASE$/Uploaded%20Media/carousel.jpg)![](https://educalingo.com/en/dic-en/carousel)
 
 Create an interactive program that simulates a carousel ride. For each carousel turn, the rider will randomly greet the user using one of three different greeting functions. This exercise will help you practice working with variables, loops, conditional statements, and functions.
 
-#### Instructions:
+## Instructions
 
 1. **Set Up Your Workspace:**
 
@@ -104,6 +108,6 @@ Hello, Alice! Welcome to the carousel!
   - Test your program with different numbers of turns and different rider names to ensure it works as expected.
   - Refresh your codepen.io page to reset the prompts and try new inputs.
 
-6. **Submission:**
+## What to Submit
 
   - Save your CodePen project and submit the link.

@@ -1,6 +1,13 @@
+# Assignment: Ch. 13 - Discover the DOM - Showing a node's child (In class assignment)
+
+## Description
+
 Create a new codepen.io named "Discover the DOM." Your mission here is to complete the `showChild()` function that shows one of the children of a DOM element node. This function takes the parent node and the child node index as a parameter. Error cases like a non-element node or an out-of-limits index must be considered.
 
 Here's the associated HTML code.
+
+## Objective
+## Instructions
 
 ```
 <h1>My web page</h1>
@@ -34,3 +41,7 @@ showChild(document.body.childNodes[0], 0);
 > 
 
 NOTE: Use console.error() rather than console.log() to display an error message in the console.
+
+## What to Submit
+
+Submit the URL to your CodePen.

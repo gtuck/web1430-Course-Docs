@@ -1,4 +1,12 @@
+# Assignment: Ch. 12 - Getting Started with the Web
+
+## Description
+
 **Objective:** In this assignment, you will plan and design a simple website using the guidelines provided. You will decide on the content, choose visual elements, sketch your layout, and select assets for your webpage. This assignment will prepare you for future steps. Use ([MDN What will your website look like?](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like)) as an additional resource.
+
+## Objective
+
+## Instructions
 
 #### **Assignment Instructions**
 
@@ -35,7 +43,7 @@ Follow the steps below to complete your assignment. Take your time and consider 
   - Color: Make sure you have saved the hex code of your chosen background color.
   - Font: Note the name and source of the font you plan to use.
 
-#### **Submission Requirements**
+## What to Submit
 
 - A written summary of your website concept, including the answers to the questions above.
 - A photo or scan of your sketched website layout.

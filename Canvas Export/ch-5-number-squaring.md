@@ -1,3 +1,7 @@
+# Assignment: Ch. 5 - Number Squaring
+
+## Description
+
 In a new [codepen.io](https://codepen.io/pen) complete the following program so that the `square1()` and `square2()` functions work properly.
 
 ```
@@ -21,6 +25,10 @@ console.log(square2(0)); // Must show 0
 console.log(square2(2)); // Must show 4
 console.log(square2(5)); // Must show 25
 ```
+
+## Objective
+
+## Instructions
 
 Sample output:
 
@@ -56,5 +64,7 @@ The square of 8 is: 64
 The square of 9 is: 81
 The square of 10 is: 100
 ```
+
+## What to Submit
 
 Submit the URL to your codepen.io

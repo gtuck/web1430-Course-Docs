@@ -1,6 +1,14 @@
+# Assignment: Ch. 16 - React to events
+
+## Description
+
 In a new codepen.io named "React to events," add the provided HTML to the appropriate codepen.io tab. Then, as described in the "Coding time!" section at the end of chapter 16 of our book, write the javascript to accomplish the tasks outlined.
 
 ---
+
+## Objective
+
+## Instructions
 
 #### HTML:
 
@@ -47,5 +55,7 @@ In a new codepen.io named "React to events," add the provided HTML to the approp
 4. change_colors
 
 ---
+
+## What to Submit
 
 Please submit the URL to your codepen.io

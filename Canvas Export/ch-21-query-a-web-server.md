@@ -1,6 +1,14 @@
+# Assignment: Ch. 21 - Query a web server
+
+## Description
+
 In a new codepen.io named "Query a web server," add the provided HTML to the appropriate codepen.io tab. Then, as described in the "[Coding time!](https://thejsway.net/chapter21/#coding-time)" section at the end of chapter 21 in our book, write the 2 Javascript functions to accomplish the tasks outlined.
 
 ---
+
+## Objective
+
+## Instructions
 
 #### HTML:
 
@@ -17,5 +25,7 @@ In a new codepen.io named "Query a web server," add the provided HTML to the app
 ```
 
 ---
+
+## What to Submit
 
 Please submit the URL to your codepen.io

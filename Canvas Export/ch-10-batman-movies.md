@@ -1,7 +1,13 @@
-**Objective**
+# Assignment: Ch. 10 - Batman movies
+
+## Description
+
+## Objective
 Strengthen your functional programming skills by working with a curated dataset of Batman movies. You will apply higher-order functions (e.g., `map`, `filter`, and `reduce`) and write pure functions to transform and analyze data—while adhering to functional programming principles of immutability and no side effects.
 
 ---
+
+## Instructions
 
 ### Part 1: Set Up Your Project
 
@@ -105,7 +111,7 @@ Once you have written the pure functions, you can:
 
 ---
 
-### Part 4: Submission
+## What to Submit
 
 1. **Ensure your CodePen** is saved and titled appropriately.
 2. **Submit the URL** to your CodePen.

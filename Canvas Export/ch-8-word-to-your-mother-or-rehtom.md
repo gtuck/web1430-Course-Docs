@@ -1,4 +1,12 @@
+# Assignment: Ch. 8 - Word to your Mother or Rehtom
+
+## Description
+
 Create a new pen on [CodePen.io](https://codepen.io/) titled "Word to Your Mother." Write a JavaScript program that performs the following tasks based on a word entered by the user:
+
+## Objective
+
+## Instructions
 
 1. **Word Information:**
 
@@ -47,5 +55,7 @@ Racecar is a palindrome.
 ```
 
 **Submission:**
+
+## What to Submit
 
 - Submit the link to your CodePen project.

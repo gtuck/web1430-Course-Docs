@@ -1,6 +1,14 @@
+# Assignment: Ch. 15 - Modify page structure
+
+## Description
+
 In a new codepen.io named "Modify page structure," add the provided HTML and CSS to the appropriate codepen.io tabs. Then as described in the "[Coding time!](https://thejsway.net/chapter15/#coding-time)" section at the end of chapter 15 in our book, You will combine what is described as the five javascript files as separate programs in the codepen.io 'JS' window to accomplish the tasks outlined.
 
 ---
+
+## Objective
+
+## Instructions
 
 #### HTML:
 
@@ -96,5 +104,7 @@ and width of the element identified by "content."
 ![page preview]($IMS-CC-FILEBASE$/Uploaded%20Media/Screenshot%202023-04-12%20at%209.05.46%20AM.png)
 
 ---
+
+## What to Submit
 
 Please submit the URL to your codepen.io

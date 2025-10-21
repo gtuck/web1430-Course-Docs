@@ -1,3 +1,7 @@
+# Assignment: Ch. 7 - List of words
+
+## Description
+
 In a new codepen.io named 'List of words' write a program that repeatedly prompts the user for a word until the user types "stop". The program then shows each of these words, except "stop".
 
 ```
@@ -10,6 +14,10 @@ In a new codepen.io named 'List of words' write a program that repeatedly prompt
 // TODO: Loop through words array and generate output
 ```
 
+## Objective
+
+## Instructions
+
 Sample output:
 
 ```
@@ -20,5 +28,7 @@ Sample output:
 "the"
 "Beginning"
 ```
+
+## What to Submit
 
 Submit the URL to your codepen.io

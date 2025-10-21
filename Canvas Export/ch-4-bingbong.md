@@ -1,4 +1,12 @@
+# Assignment: Ch. 4 - BingBong
+
+## Description
+
 In a new [codepen.io](https://codepen.io/pen/) named "BingBong" write a javascript program that includes a for loop with the appropriate conditional statements that display in the console all numbers between 1 and 100 with the following exceptions:
+
+## Objective
+
+## Instructions
 
 1. It shows "Bing" if the number is divisible by 3.
 2. It shows "Bong" if the number is divisible by 5 and not by 3.
@@ -110,5 +118,7 @@ Sample output:
 "Bing"
 "Bong"
 ```
+
+## What to Submit
 
 Submit the URL to your codepen.io

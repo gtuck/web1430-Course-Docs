@@ -1,4 +1,11 @@
+# Assignment: Ch. 14 - Traversing the DOM - Counting elements & Handling attributes
+
+## Description
+
 In this assignment, you will practice traversing the DOM by counting elements and handling attributes using JavaScript. Follow the steps below to complete the assignment:
+
+## Objective
+## Instructions
 
 1. Create a new pen on [codepen.io](https://codepen.io/) and name it "Traversing the DOM".
 2. Copy the provided HTML and JavaScript samples into your pen.
@@ -53,3 +60,7 @@ Sample function calls and outputs for `has(id, someClass)` function:
   - `console.log(has("contrabass", "chordophone")); // Expected output: undefined`
 
 Once you have completed the assignment, save your pen and submit the URL of your saved pen as your assignment submission.
+
+## What to Submit
+
+Submit the URL to your CodePen.

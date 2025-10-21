@@ -1,3 +1,11 @@
+# Assignment: Ch. 2 - Variable swapping
+
+## Description
+
+## Objective
+
+## Instructions
+
 #### Observe the following program.
 
 ```
@@ -15,5 +23,7 @@ In a new [codepen.io](https://codepen.io/pen/) named VarSwap, write a program w
 This exercise has several valid solutions.
 
 Hint: You may use more than two variables to solve it.
+
+## What to Submit
 
 Submit the URL to your VarSwap **codepen.io**

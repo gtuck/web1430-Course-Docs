@@ -1,6 +1,14 @@
+# Assignment: Ch. 17 - Manipulate forms
+
+## Description
+
 In a new codepen.io named "Manipulate forms," add the provided HTML and CSS to the appropriate codepen.io tabs. Then, as described in the "[Coding time!](https://thejsway.net/chapter17/#coding-time)" section at the end of chapter 17 in our book, write the 3 Javascript functions to accomplish the tasks outlined.
 
 ---
+
+## Objective
+
+## Instructions
 
 #### HTML:
 
@@ -78,5 +86,7 @@ In a new codepen.io named "Manipulate forms," add the provided HTML and CSS to t
 3. password_checker
 
 ---
+
+## What to Submit
 
 Please submit the URL to your codepen.io

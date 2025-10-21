@@ -1,6 +1,13 @@
+# Assignment: Ch. 9 - Now back to our RPG (In class assignment)
+
+## Description
+
 In a new codepen.io named RPG v.1 and using the code sample from chapter 9 in our book ([The JS Way](https://thejsway.net/chapter09/index.html#object-oriented-programming)) you will create a character class that can be used to add characters and monsters to our RPG. Having both characters and monsters in our game will allow for battles.
 
 The rules of engagement are as follows:
+
+## Objective
+## Instructions
 
 - If attacked, a character sees their life points decrease from the strength of the attacker.
 - If its health value falls below zero, the character is considered dead and cannot attack anymore.
@@ -26,3 +33,7 @@ Glacius has 110 health points, 30 as strength and 10 XP points
 ```
 
 Submit the URL to your saved codeine.io.
+
+## What to Submit
+
+Submit the URL to your CodePen.

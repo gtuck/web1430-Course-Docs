@@ -1,7 +1,14 @@
+# Assignment: Ch. 7 & 8 - Looping Through Arrays and Strings - (in class assignment)
+
+## Description
+
 **Objective:**
 In this assignment, you'll practice using `for...of` loops to iterate over arrays and `for` loops to iterate over strings.
 
 **Instructions:**
+
+## Objective
+## Instructions
 
 1. Create a new project on [codepen.io](https://codepen.io) called **"Loop through Strings."**
 
@@ -74,3 +81,7 @@ The word apple has 5 characters.
 **Submission:**
 
 - Save your CodePen project and submit the link.
+
+## What to Submit
+
+Submit the URL to your CodePen.
