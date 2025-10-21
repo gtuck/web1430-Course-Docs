@@ -1,17 +1,17 @@
-# Ch. 5 Assignment: Functions Lab — Define and Use Functions
+# Ch. 5 Assignment: Write Functions — Declarations, Arrow, Reuse
 
 ## Description
 
-Practice Chapter 5 function basics: declare functions, pass parameters, return values, and reuse them. You’ll implement small, focused utilities (square, min, circle math, greet) and test each with sample calls, including simple user input and number conversion.
+Practice Chapter 5 function basics: declare functions, pass parameters, return values, and reuse them. Build the exact chapter exercises: Improved hello, number squaring (with a loop), minimum of two numbers, a basic calculator, and circle circumference/area using `Math.PI` and exponentiation.
 
 ## Learning Objectives
 
-- Declare functions with the `function` keyword.
-- Use parameters and return values to produce results.
-- Reuse functions by calling them with different arguments.
-- Use `const` for constants (e.g., `pi`) and avoid unnecessary global side effects.
-- Read input with `prompt()` and convert with `Number()` when needed.
-- Display results with `console.log()` clearly.
+- Declare functions with the `function` keyword and with arrow syntax.
+- Use parameters and `return` values correctly; call functions to reuse logic.
+- Convert user input with `Number()` where numeric math is required.
+- Use `Math.PI` and the exponentiation operator `**` for circle math.
+- Apply control flow inside functions (e.g., `if/else`, `switch`).
+- Log results clearly with `console.log()`.
 
 ## Setup (CodePen Only)
 
@@ -22,104 +22,109 @@ Practice Chapter 5 function basics: declare functions, pass parameters, return v
 
 ## Instructions
 
-Work top‑to‑bottom in the JS panel. Add comments to separate tasks. For each function, add a few test calls and log the results.
+Work top‑to‑bottom in the JS panel. Add comments to separate tasks. Follow the chapter tasks closely.
 
-1) square(n)
-- Write a function that returns the square of a number.
+1) Improved hello
+- Complete the program so it asks the user for first and last names, then shows the result of `sayHello()`.
 
 ```js
-// 1) square(n)
-function square(n) {
-  return n * n;
+// 1) Improved hello — complete the program
+function sayHello(firstName, lastName) {
+  const message = `Hello, ${firstName} ${lastName}!`;
+  return message;
 }
 
-console.log('square(0) =', square(0));
-console.log('square(2) =', square(2));
-console.log('square(5) =', square(5));
+// TODO: ask user for first and last name
+const first = prompt('Enter your first name:');
+const last = prompt('Enter your last name:');
+
+// TODO: call sayHello() and show its result
+console.log(sayHello(first, last));
 ```
 
-2) min(a, b)
-- Write a function that returns the smaller of two numbers. If they’re equal, return either.
+2) Number squaring — two functions, then a loop
+- Make both functions work, then show squares for numbers 0..10 using a loop (don’t write 11 manual calls!).
 
 ```js
-// 2) min(a, b)
+// 2) Number squaring
+// Square the given number x
+function square1(x) {
+  return x * x;
+}
+
+// Square the given number x (arrow syntax)
+const square2 = x => x * x;
+
+console.log(square1(0)); // 0
+console.log(square1(2)); // 4
+console.log(square1(5)); // 25
+
+console.log(square2(0)); // 0
+console.log(square2(2)); // 4
+console.log(square2(5)); // 25
+
+// Now show squares for 0..10 using a loop
+for (let i = 0; i <= 10; i++) {
+  console.log(i + ' squared = ' + square1(i));
+}
+```
+
+3) Minimum of two numbers
+- Implement `min(a, b)` (ignore `Math.min`).
+
+```js
+// 3) Minimum of two numbers
 function min(a, b) {
-  if (a < b) {
-    return a;
-  } else if (b < a) {
-    return b;
-  } else {
-    return a; // equal case
-  }
+  if (a < b) return a;
+  if (b < a) return b;
+  return a; // equal case
 }
 
-console.log('min(2, 5) =', min(2, 5));
-console.log('min(10, 3) =', min(10, 3));
-console.log('min(7, 7) =', min(7, 7));
+console.log(min(4.5, 5)); // 4.5
+console.log(min(19, 9));  // 9
+console.log(min(1, 1));   // 1
 ```
 
-3) Circle math — circumference(r) and area(r)
-- Use a constant `pi = 3.14`.
-- Write `circumference(r)` that returns `2 * pi * r`.
-- Write `area(r)` that returns `pi * r * r`.
-- Ask the user for a radius; convert to number; log both results.
+4) Calculator
+- Complete `calculate(a, op, b)` to support `+`, `-`, `*`, and `/`.
 
 ```js
-// 3) Circle math
-const pi = 3.14;
+// 4) Calculator
+function calculate(a, op, b) {
+  if (op === '+') return a + b;
+  if (op === '-') return a - b;
+  if (op === '*') return a * b;
+  if (op === '/') return a / b; // JS returns Infinity for divide by 0
+  return NaN; // unsupported operator
+}
 
+console.log(calculate(4, '+', 6));  // 10
+console.log(calculate(4, '-', 6));  // -2
+console.log(calculate(2, '*', 0));  // 0
+console.log(calculate(12, '/', 0)); // Infinity
+```
+
+5) Circumference and area of a circle
+- Write `circumference(r)` and `area(r)` using `Math.PI` and `**`. Ask the user for a radius, convert it, and log both results.
+
+```js
+// 5) Circle math with Math.PI and **
 function circumference(r) {
-  return 2 * pi * r;
+  return 2 * Math.PI * r;
 }
 
 function area(r) {
-  return pi * r * r;
+  return Math.PI * (r ** 2);
 }
 
 const radiusInput = prompt('Enter a radius:');
 const radius = Number(radiusInput);
 if (!Number.isNaN(radius) && radius >= 0) {
-  console.log('circumference(' + radius + ') =', circumference(radius));
-  console.log('area(' + radius + ') =', area(radius));
+  console.log('circumference(' + radius + ') = ' + circumference(radius));
+  console.log('area(' + radius + ') = ' + area(radius));
 } else {
   console.log('Invalid radius');
 }
-```
-
-4) greet(firstName, lastName)
-- Write a function that returns a greeting string like `Hello, Ada Lovelace!`.
-- Ask the user for first and last names and show the greeting.
-
-```js
-// 4) greet(firstName, lastName)
-function greet(firstName, lastName) {
-  return 'Hello, ' + firstName + ' ' + lastName + '!';
-}
-
-const first = prompt('Enter your first name:');
-const last = prompt('Enter your last name:');
-console.log(greet(first, last));
-```
-
-5) Fix‑me mini‑exercises
-- Correct each snippet so it works as intended.
-
-```js
-// 5a) Missing return — should print 9
-// function triple(x) { x * 3; }
-function triple(x) { return x * 3; }
-console.log(triple(3));
-
-// 5b) Parameter order — should print 2 then 5
-// function first(a, b) { return b; }
-function first(a, b) { return a; }
-console.log(first(2, 5));
-
-// 5c) Name mismatch — should call the declared function
-// function sq(n) { return n * n; }
-// console.log(square(4));
-function sq(n) { return n * n; }
-console.log(sq(4));
 ```
 
 ## Example Output
@@ -127,18 +132,25 @@ console.log(sq(4));
 Your output will vary based on inputs. Sample checkpoints:
 
 ```
-square(0) = 0
-square(2) = 4
-square(5) = 25
-min(2, 5) = 2
-min(10, 3) = 3
-min(7, 7) = 7
-circumference(3) = 18.84
-area(3) = 28.26
 Hello, Ada Lovelace!
+0
+4
+25
+0
+4
+25
+0 squared = 0
+...
+10 squared = 100
+4.5
 9
-2
-16
+1
+10
+-2
+0
+Infinity
+circumference(3) = 18.84955592153876
+area(3) = 28.274333882308138
 ```
 
 ## What to Submit
@@ -148,16 +160,16 @@ Hello, Ada Lovelace!
 
 ## Grading (10 pts)
 
-- `square(n)` implemented with correct tests (2)
-- `min(a, b)` implemented with equal case handled (2)
-- Circle math: `const pi`, `circumference(r)`, `area(r)`, input conversion (3)
-- `greet(firstName, lastName)` and sample inputs (1)
-- Fix‑me mini‑exercises corrected (2)
+- Improved hello: prompts and shows `sayHello()` result (1)
+- Number squaring: `square1` and arrow `square2` plus loop 0..10 (3)
+- `min(a, b)` implemented and tested (2)
+- `calculate(a, op, b)` handles +, -, *, / (incl. divide by 0) (2)
+- Circle math: `circumference(r)` and `area(r)` using `Math.PI` and `**` with input conversion (2)
 
 ## Tips & Troubleshooting
 
-- Always `return` a value from functions that compute a result.
-- Keep constants like `pi` in `const` and reuse them.
+- Always `return` from functions that compute a result.
+- Arrow functions are concise; use them when appropriate.
 - Convert prompt input with `Number()` before numeric math.
-- Name functions clearly; make test calls after each definition.
-
+- Prefer strict equality `===` when comparing operators/strings.
+- Use `Math.PI` for π and `**` for powers.
