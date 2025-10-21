@@ -1,87 +1,203 @@
-# Assignment: Ch. 7 & 8 - Looping Through Arrays and Strings - (in class assignment)
+# Ch. 7 & 8 Assignment: Arrays and Strings Lab
 
 ## Description
 
-**Objective:**
-In this assignment, you'll practice using `for...of` loops to iterate over arrays and `for` loops to iterate over strings.
+Practice Chapters 7 and 8 together: store and process data in arrays, iterate with different loop styles, update arrays, and manipulate strings (length, case, indexing, iteration, search). Build small tasks in one CodePen to solidify fundamentals.
 
-**Instructions:**
+## Learning Objectives
 
-## Objective
+- Create and update arrays; use `.length`, indexing, and iteration (`for`, `forEach`, `for...of`).
+- Add and remove elements with `push`, `unshift`, `pop`, and `splice`.
+- Compute aggregates (sum, max) by iterating arrays.
+- Read multiple inputs with `prompt()` and store them in arrays.
+- Use string length, case conversion (`toLowerCase`, `toUpperCase`), indexing, and iteration.
+- Build and search strings with simple logic and methods like `indexOf`, `startsWith`, `endsWith`, and `split` (where useful).
+
+## Setup (CodePen Only)
+
+- Create a new CodePen named `Ch. 7 & 8 - Arrays and Strings Lab`.
+- Use the JS panel only (no HTML/CSS).
+- Open the CodePen Console (click `Console` at the bottom).
+- Optional: Pen Settings → Behavior → enable “Clear Console on Run”.
+
 ## Instructions
 
-1. Create a new project on [codepen.io](https://codepen.io) called **"Loop through Strings."**
+Work top‑to‑bottom in the JS panel. Add comments to separate tasks.
 
-2. Write a program that:
+1) Musketeers
+- Create an array `musketeers` with `"Athos"`, `"Porthos"`, `"Aramis"`.
+- Show each element using a `for` loop.
+- Add `"D'Artagnan"` with `push`, then show each element using `forEach`.
+- Remove `"Aramis"` and then show each element using `for...of`.
 
-  - Creates an array of strings containing five words of your choice. For example: 
+```js
+// 1) Musketeers
+let musketeers = ['Athos', 'Porthos', 'Aramis'];
 
-```
-const words = ["apple", "banana", "cherry", "date", "elderberry"];
-```
+// a) for loop
+for (let i = 0; i < musketeers.length; i++) {
+  console.log(musketeers[i]);
+}
 
-  - Uses a `for...of` loop to iterate through the array of words.
-  - For each word in the array, use a nested `for` loop to iterate through the characters of the word.
-  - Print each character of the word on a new line. After printing the characters of one word, print an empty line before moving to the next word in the array.
+// b) add D'Artagnan, then forEach
+musketeers.push("D'Artagnan");
+musketeers.forEach(name => {
+  console.log(name);
+});
 
-3. **Sample Output:**
+// c) remove Aramis (generic)
+const aramisIndex = musketeers.indexOf('Aramis');
+if (aramisIndex !== -1) {
+  musketeers.splice(aramisIndex, 1);
+}
 
-```
-a
-p
-p
-l
-e
-
-b
-a
-n
-a
-n
-a
-
-c
-h
-e
-r
-r
-y
-
-d
-a
-t
-e
-
-e
-l
-d
-e
-r
-b
-e
-r
-r
-y
+// d) for...of
+for (const name of musketeers) {
+  console.log(name);
+}
 ```
 
-4. **Then:**
+2) Sum of values
+- Create `values = [3, 11, 7, 2, 9, 10]`. Compute and log the sum (should reflect changes if the array changes).
 
-  - After printing each word, count the number of characters in the word and display the word and its length at the end.
-  - Example output: 
-
+```js
+// 2) Sum of values
+const values = [3, 11, 7, 2, 9, 10];
+let sum = 0;
+for (const n of values) {
+  sum += n;
+}
+console.log('sum =', sum); // 42
 ```
-The word apple has 5 characters.
+
+3) Array maximum
+- Using the same `values` array (or another), compute and log the maximum value generically.
+
+```js
+// 3) Array maximum
+let max = values[0];
+for (const n of values) {
+  if (n > max) {
+    max = n;
+  }
+}
+console.log('max =', max); // 11
 ```
 
-**Important Notes:**
+4) List of words (until "stop")
+- Ask the user for words until they type exactly `stop`.
+- Then show each of the entered words, excluding `stop`.
 
-- The `for...of` loop is used for the outer loop to access each word in the array directly.
-- The inner `for` loop is used to iterate over each character of the word.
+```js
+// 4) List of words
+const words = [];
+while (true) {
+  const w = prompt('Enter a word (type "stop" to finish):');
+  if (w === null) break; // user canceled
+  if (w === 'stop') break;
+  words.push(w);
+}
+// show words
+for (const w of words) {
+  console.log(w);
+}
+```
 
-**Submission:**
+5) Word info
+- Ask for a single word; show its length, lowercase, and uppercase values.
 
-- Save your CodePen project and submit the link.
+```js
+// 5) Word info
+const word = prompt('Enter a word:') || '';
+console.log('length:', word.length);
+console.log('lowercase:', word.toLowerCase());
+console.log('uppercase:', word.toUpperCase());
+```
+
+6) Vowel count (a, e, i, o, u)
+- Count the number of vowels in the entered word (treat input case‑insensitively).
+
+```js
+// 6) Vowel count
+const lower = word.toLowerCase();
+let vowels = 0;
+for (const ch of lower) {
+  if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u') {
+    vowels++;
+  }
+}
+console.log('vowels:', vowels);
+```
+
+7) Backwards word
+- Show the word written backwards.
+
+```js
+// 7) Backwards word
+let reversed = '';
+for (let i = word.length - 1; i >= 0; i--) {
+  reversed += word[i];
+}
+console.log('reversed:', reversed);
+```
+
+8) Palindrome (ignore punctuation, spacing, and case)
+- Normalize the input by keeping only letters and digits, converting to lowercase.
+- Check if the normalized string reads the same forward and backward.
+
+```js
+// 8) Palindrome check
+function isAlphaNum(ch) {
+  const c = ch.toLowerCase();
+  const isLetter = c >= 'a' && c <= 'z';
+  const isDigit = c >= '0' && c <= '9';
+  return isLetter || isDigit;
+}
+
+let cleaned = '';
+for (const ch of (prompt('Enter a word or phrase to test palindrome:') || '')) {
+  if (isAlphaNum(ch)) {
+    cleaned += ch.toLowerCase();
+  }
+}
+
+let cleanedReversed = '';
+for (let i = cleaned.length - 1; i >= 0; i--) {
+  cleanedReversed += cleaned[i];
+}
+
+const isPal = cleaned.length > 0 && cleaned === cleanedReversed;
+console.log('palindrome:', isPal);
+```
+
+## Example Outputs
+
+- Musketeers after removal might show: `Athos`, `Porthos`, `D'Artagnan`.
+- Sum: `sum = 42`; Max: `max = 11` for `[3, 11, 7, 2, 9, 10]`.
+- Words list (input: apple, banana, stop): outputs `apple`, `banana`.
+- Word info for `JavaScript`: `length: 10`, `lowercase: javascript`, `uppercase: JAVASCRIPT`.
+- Vowel count for `JavaScript`: `vowels: 3`.
+- Backwards for `radar`: `reversed: radar`.
+- Palindrome: `radar` → `palindrome: true`; `A man, a plan, a canal: Panama!` → `palindrome: true`.
 
 ## What to Submit
 
-Submit the URL to your CodePen.
+- The URL to your public CodePen `Ch. 7 & 8 - Arrays and Strings Lab`.
+- A short note that tasks 1–8 run and produce the expected messages.
+
+## Grading (10 pts)
+
+- Musketeers: correct iterations and dynamic add/remove (3)
+- Sum and maximum computed generically from the array (2)
+- List‑of‑words loop and display excluding `stop` (1)
+- Word info: length and case conversions (1)
+- Vowel count (case‑insensitive) (1)
+- Reverse and palindrome ignoring spaces/punctuation/case (2)
+
+## Tips & Troubleshooting
+
+- Loops: be careful with start/end indexes and off‑by‑one errors.
+- Iteration: prefer `for...of` when you don’t need indexes; use classic `for` for index access.
+- Array updates: `push` adds to end; `unshift` adds to start; `pop` removes last; `splice(i, n)` removes `n` elements from index `i`.
+- Strings are immutable; build new strings when reversing or filtering.
+- Palindrome normalization: keep letters/digits and lower‑case them before comparing.
