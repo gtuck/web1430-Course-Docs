@@ -165,11 +165,11 @@ for (let id = 1; id <= 10; id++) {
 - The URL to your public CodePen `Ch. 22 - Use Web APIs`.
 - A short note that all three sections work and errors are handled gracefully.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Punk API: fetch + render extended fields (3)
-- GitHub profile: fetch by login with 404 handling (3)
-- SWAPI planets: generated links and detail fetch (3)
+- Punk API: fetch + render extended fields (8)
+- GitHub profile: fetch by login with 404 handling (8)
+- SWAPI planets: generated links and detail fetch (8)
 - Clean DOM updates and basic error handling (1)
 
 ## Tips & Troubleshooting
@@ -178,4 +178,4 @@ for (let id = 1; id <= 10; id++) {
 - Check `response.ok` and throw to route failures into `.catch()`.
 - Some APIs rate‑limit; retry later if you see a 429 or similar.
 - Network calls are asynchronous; keep rendering inside `then()`.
-
+- Use `console.log()` to inspect intermediate values (responses, parsed JSON) when debugging.

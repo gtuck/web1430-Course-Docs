@@ -127,7 +127,7 @@ if (!Number.isNaN(radius) && radius >= 0) {
 }
 ```
 
-## Example Output
+## Example Outputs
 
 Your output will vary based on inputs. Sample checkpoints:
 
@@ -158,13 +158,13 @@ area(3) = 28.274333882308138
 - The URL to your public CodePen `Ch. 5 - Functions Lab`.
 - A short note that tasks 1–5 run and produce the expected messages.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Improved hello: prompts and shows `sayHello()` result (1)
-- Number squaring: `square1` and arrow `square2` plus loop 0..10 (3)
-- `min(a, b)` implemented and tested (2)
-- `calculate(a, op, b)` handles +, -, *, / (incl. divide by 0) (2)
-- Circle math: `circumference(r)` and `area(r)` using `Math.PI` and `**` with input conversion (2)
+- Improved hello: prompts and shows `sayHello()` result (3)
+- Number squaring: `square1` and arrow `square2` plus loop 0..10 (7)
+- `min(a, b)` implemented and tested (5)
+- `calculate(a, op, b)` handles +, -, *, / (incl. divide by 0) (5)
+- Circle math: `circumference(r)` and `area(r)` using `Math.PI` and `**` with input conversion (5)
 
 ## Tips & Troubleshooting
 

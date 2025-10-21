@@ -13,7 +13,7 @@ Practice Chapter 15 by modifying the DOM after load: update text and attributes,
 - Change styles with `element.style` and read styles with `getComputedStyle()`.
 - Prefer batching DOM writes (create → set props → insert) to reduce reflows.
 
-## Setup (CodePen)
+## Setup (CodePen Only)
 
 - Create a new CodePen named `Ch. 15 - Modify Page Structure`.
 - Use both the HTML and JS panels.
@@ -180,13 +180,13 @@ document.getElementById('infos').appendChild(ulInfo);
 - The URL to your public CodePen `Ch. 15 - Modify Page Structure`.
 - A note that tasks 1–5 run with the provided HTML per section.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Paragraph + link creation using DOM APIs (2)
-- Newspaper list: clickable links rendered from array (2)
-- Mini‑dictionary with correct `<dl>/<dt>/<dd>` structure (2)
-- Color prompts correctly update text and background (2)
-- Element size list built using `getComputedStyle()` (2)
+- Paragraph + link creation using DOM APIs (5)
+- Newspaper list: clickable links rendered from array (5)
+- Mini‑dictionary with correct `<dl>/<dt>/<dd>` structure (5)
+- Color prompts correctly update text and background (5)
+- Element size list built using `getComputedStyle()` (5)
 
 ## Tips & Troubleshooting
 
@@ -194,4 +194,3 @@ document.getElementById('infos').appendChild(ulInfo);
 - Reserve `innerHTML` for small, controlled snippets; avoid mixing with DOM nodes within the same container to prevent surprises.
 - `element.style` only reflects inline styles; use `getComputedStyle()` to read final values.
 - For precise measurements, `element.getBoundingClientRect()` also returns width/height in pixels.
-

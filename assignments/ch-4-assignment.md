@@ -176,14 +176,14 @@ for (let i = 1; i <= 100; i++) {
 - The URL to your public CodePen `Ch. 4 - Loops Lab`.
 - A short note that tasks 1–7 run and produce the expected messages.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Carousel 10‑turn and user‑defined versions (2)
-- Parity: even/odd and exactly 10 numbers from start (2)
-- Input validation loops (`<=100` and `50..100`) (2)
-- Multiplication table 2..9 with validation (2)
-- Neither yes nor no (1)
-- FizzBuzz with correct precedence/order (1)
+- Carousel 10‑turn and user‑defined versions (5)
+- Parity: even/odd and exactly 10 numbers from start (5)
+- Input validation loops (`<=100` and `50..100`) (5)
+- Multiplication table 2..9 with validation (5)
+- Neither yes nor no (3)
+- FizzBuzz with correct precedence/order (2)
 
 ## Tips & Troubleshooting
 

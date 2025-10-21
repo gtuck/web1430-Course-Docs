@@ -156,7 +156,7 @@ questions.forEach(q => {
 });
 ```
 
-## Example Behaviors
+## Example Outputs
 
 - Click counter increments until “Deactivate counting” disables it.
 - Pressing R/Y/G/B changes all `div` backgrounds accordingly.
@@ -168,12 +168,12 @@ questions.forEach(q => {
 - The URL to your public CodePen `Ch. 16 - React to Events`.
 - A short note that tasks 1–4 run and behave as described.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Click counter with deactivate using `removeEventListener` (2)
-- Keyboard color changes on R/Y/G/B for all `div`s (2)
-- Dessert list: add via prompt, rename on click (3)
-- Quiz renders from data and reveals individual answers (3)
+- Click counter with deactivate using `removeEventListener` (5)
+- Keyboard color changes on R/Y/G/B for all `div`s (5)
+- Dessert list: add via prompt, rename on click (7)
+- Quiz renders from data and reveals individual answers (8)
 
 ## Tips & Troubleshooting
 
@@ -181,4 +181,3 @@ questions.forEach(q => {
 - Prefer updating only what changed in the DOM for responsiveness.
 - Use `e.preventDefault()` for links/forms when you need to stop navigation/submission.
 - Consider `e.stopPropagation()` when parent handlers fire unintentionally.
-

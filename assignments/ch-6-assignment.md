@@ -135,13 +135,13 @@ console.log(account.describe());
 - The URL to your public CodePen `Ch. 6 - Objects Lab`.
 - A short note that tasks 1–4 run and produce the expected messages.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Aurora object with `xp` and working `describe()` using `this` (3)
-- Dog object with `bark()` and correct logs (2)
-- Circle object with `circumference()` and `area()` using `Math.PI` (2)
-- Account object with `credit()` and `describe()`, correct before/after (2)
-- Clear, readable console output (1)
+- Aurora object with `xp` and working `describe()` using `this` (8)
+- Dog object with `bark()` and correct logs (5)
+- Circle object with `circumference()` and `area()` using `Math.PI` (5)
+- Account object with `credit()` and `describe()`, correct before/after (5)
+- Clear, readable console output (2)
 
 ## Tips & Troubleshooting
 

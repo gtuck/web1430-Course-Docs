@@ -185,14 +185,14 @@ console.log('palindrome:', isPal);
 - The URL to your public CodePen `Ch. 7 & 8 - Arrays and Strings Lab`.
 - A short note that tasks 1–8 run and produce the expected messages.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Musketeers: correct iterations and dynamic add/remove (3)
-- Sum and maximum computed generically from the array (2)
-- List‑of‑words loop and display excluding `stop` (1)
-- Word info: length and case conversions (1)
-- Vowel count (case‑insensitive) (1)
-- Reverse and palindrome ignoring spaces/punctuation/case (2)
+- Musketeers: correct iterations and dynamic add/remove (8)
+- Sum and maximum computed generically from the array (5)
+- List‑of‑words loop and display excluding `stop` (2)
+- Word info: length and case conversions (3)
+- Vowel count (case‑insensitive) (3)
+- Reverse and palindrome ignoring spaces/punctuation/case (4)
 
 ## Tips & Troubleshooting
 

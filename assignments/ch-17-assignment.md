@@ -186,7 +186,7 @@ input.addEventListener('blur', () => {
 });
 ```
 
-## Example Behaviors
+## Example Outputs
 
 - Password checker: invalid rules show red message; valid shows green message; submit is prevented in CodePen.
 - Character list: houses populate on load; selecting one lists its characters.
@@ -197,15 +197,14 @@ input.addEventListener('blur', () => {
 - The URL to your public CodePen `Ch. 17 - Forms Lab`.
 - A short note that tasks 1–3 run and behave as described.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Password validation on submit (messages + color, prevent default) (4)
-- House select populated and character list updates on change (3)
-- Autocomplete shows filtered suggestions and fills on click (3)
+- Password validation on submit (messages + color, prevent default) (10)
+- House select populated and character list updates on change (7)
+- Autocomplete shows filtered suggestions and fills on click (8)
 
 ## Tips & Troubleshooting
 
 - Use `e.preventDefault()` in submit handlers when you want to stop navigation.
 - `focus`/`blur` are useful for showing inline help; `input` is best for live validation.
 - Consider trimming input with `.trim()`; compare case-insensitively with `.toLowerCase()`.
-

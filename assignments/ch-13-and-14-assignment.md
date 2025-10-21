@@ -13,7 +13,7 @@ Combine Chapters 13 and 14 to practice core DOM skills: understand the DOM tree 
 - Use `classList` and `classList.contains()` to check classes.
 - Handle NodeList vs Array and iterate selections safely.
 
-## Setup (CodePen)
+## Setup (CodePen Only)
 
 - Create a new CodePen named `Ch. 13 & 14 - DOM Lab`.
 - Use both the HTML and JS panels.
@@ -209,13 +209,13 @@ has('contrabass', 'chordophone'); // error
 - The URL to your public CodePen `Ch. 13 & 14 - DOM Lab`.
 - A note that tasks 1–5 run and produce the expected results (update the HTML per section).
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- `showChild(node, index)` with proper error handling (2)
-- Correct use of selection methods for counts (2)
-- `countElements(selector)` works for given queries (2)
-- `linkInfo()` handles 0/≥1 links, shows first/last (2)
-- `has(id, class)` logs true/false and errors appropriately (2)
+- `showChild(node, index)` with proper error handling (5)
+- Correct use of selection methods for counts (5)
+- `countElements(selector)` works for given queries (5)
+- `linkInfo()` handles 0/≥1 links, shows first/last (5)
+- `has(id, class)` logs true/false and errors appropriately (5)
 
 ## Tips & Troubleshooting
 

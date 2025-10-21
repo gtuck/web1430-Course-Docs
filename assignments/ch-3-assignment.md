@@ -153,13 +153,13 @@ switch (v) {
 - The URL to your public CodePen `Ch. 3 - Conditions and Switch`.
 - A short note that tasks 1–5 run and produce the expected messages.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Number classification with correct `if / else if / else` (2)
-- Range check with `&&` and correct messages (2)
-- Following day implemented with `switch`, `default`, and `break`s (4)
-- Weather multiple choices with strict equality (1)
-- Fix‑me mini‑exercises corrected (1)
+- Number classification with correct `if / else if / else` (5)
+- Range check with `&&` and correct messages (5)
+- Following day implemented with `switch`, `default`, and `break`s (10)
+- Weather multiple choices with strict equality (2)
+- Fix‑me mini‑exercises corrected (3)
 
 ## Tips & Troubleshooting
 

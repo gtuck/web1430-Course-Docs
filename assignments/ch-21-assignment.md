@@ -93,7 +93,7 @@ fetch(paintingsUrl)
   });
 ```
 
-## Example Checkpoints
+## Example Outputs
 
 - Language list shows 4 items: C++, Java, C#, PHP.
 - Paintings table shows 3 rows: The Starry Night (1889, Vincent Van Gogh), The Scream (1893, Edvard Munch), Guernica (1937, Pablo Picasso).
@@ -103,12 +103,12 @@ fetch(paintingsUrl)
 - The URL to your public CodePen `Ch. 21 - Query a Web Server`.
 - A note that both sections render successfully and errors (if any) are logged.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Uses `fetch()` with proper `then()`/`catch()` for both requests (3)
-- Text fetch: splits by `;` and renders `<li>` items (2)
-- JSON fetch: appends table rows with name/year/artist (3)
-- Clean DOM rendering and basic error handling (2)
+- Uses `fetch()` with proper `then()`/`catch()` for both requests (8)
+- Text fetch: splits by `;` and renders `<li>` items (5)
+- JSON fetch: appends table rows with name/year/artist (8)
+- Clean DOM rendering and basic error handling (4)
 
 ## Tips & Troubleshooting
 
@@ -116,3 +116,4 @@ fetch(paintingsUrl)
 - The returned `Response` may be ok/!ok; for robust handling, you can check `if (!response.ok) throw new Error(response.statusText)` before parsing.
 - Network calls are asynchronous; keep DOM rendering inside the `then()` callbacks.
 - If nothing appears, check the Console for errors (CORS, typos, parse errors).
+- Use `console.log()` to verify intermediate values (e.g., raw response, parsed text/JSON) when debugging.

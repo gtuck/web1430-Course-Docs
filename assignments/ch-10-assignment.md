@@ -136,7 +136,9 @@ Optional extensions
 
 In your main code, call these functions with `movieList` and `console.log()` the results. Keep logging outside the functions to preserve purity.
 
-Example checkpoints (with the provided 10‑movie dataset)
+## Example Outputs
+
+With the provided 10‑movie dataset:
 
 ```
 Titles: Batman, Batman Returns, Batman Forever, Batman & Robin, Batman Begins, The Dark Knight, The Dark Knight Rises, Batman v Superman: Dawn of Justice, The Lego Batman Movie, The Batman
@@ -157,10 +159,17 @@ Most prolific director: Christopher Nolan (3)
 - The URL to your public CodePen `Ch. 10 - Batman Movies (FP)`.
 - A note that core tasks run and print the expected checkpoints.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Pure function design (no mutations; parameters in, values out) (2)
-- Titles, post‑2000, unique directors implemented with `map`/`filter` (3)
-- Counts, earliest/latest, highest/lowest rating (3)
-- Averages overall and by director (1)
-- Clear console output and organization (1)
+- Pure function design (no mutations; parameters in, values out) (5)
+- Titles, post‑2000, unique directors implemented with `map`/`filter` (8)
+- Counts, earliest/latest, highest/lowest rating (8)
+- Averages overall and by director (2)
+- Clear console output and organization (2)
+
+## Tips & Troubleshooting
+
+- Floating point averages may have many decimals; use `toFixed(2)` when printing if you want rounded output.
+- Guard against empty lists when averaging (e.g., return `0` or `NaN` explicitly if no movies match a filter).
+- Use `console.log()` to verify intermediate arrays (e.g., filtered lists, mapped ratings) before reducing.
+- Keep functions pure: do not mutate the `movieList` argument. Prefer `map`, `filter`, `reduce`, and spreading to create new arrays/values.

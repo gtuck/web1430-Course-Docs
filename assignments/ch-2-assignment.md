@@ -112,7 +112,7 @@ const pi = 3.14;     // a constant
 console.log('pi is', pi);
 ```
 
-## Example Output
+## Example Outputs
 
 Your output will vary, but key checkpoints should resemble:
 
@@ -132,13 +132,13 @@ pi is 3.14
 - The URL to your public CodePen `Ch. 2 - Console Practice`.
 - Note in the Pen description that all steps (1–7) are implemented and the console shows the expected checkpoints.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Temp variable swap works and prints 3 then 5 (3)
-- Arithmetic swap works after reset (2)
-- Correct use of `let`/`const`, assignment, and comments (2)
-- Increment demo shows expected value (1)
-- Prompt + `Number()` conversion + swap logs before/after (2)
+- Temp variable swap works and prints 3 then 5 (8)
+- Arithmetic swap works after reset (5)
+- Correct use of `let`/`const`, assignment, and comments (5)
+- Increment demo shows expected value (2)
+- Prompt + `Number()` conversion + swap logs before/after (5)
 
 ## Tips & Troubleshooting
 

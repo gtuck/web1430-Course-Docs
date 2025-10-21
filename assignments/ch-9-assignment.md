@@ -168,12 +168,12 @@ accounts.forEach(acc => console.log(acc.describe()));
 - The URL to your public CodePen `Ch. 9 - OOP Lab`.
 - A short note that tasks 1–4 run and produce the expected messages.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Dog class with correct `bark()` behavior and logs (2)
-- Character class: combat flow with `attack()` and `describe()` (3)
-- Inventory added: appears in description and transfers on defeat (3)
-- Account class: array of accounts credited and described (2)
+- Dog class with correct `bark()` behavior and logs (6)
+- Character class: combat flow with `attack()` and `describe()` (8)
+- Inventory added: appears in description and transfers on defeat (8)
+- Account class: array of accounts credited and described (3)
 
 ## Tips & Troubleshooting
 

@@ -128,7 +128,7 @@ console.log(20 + 1);
 console.log('He said, "It\'s fine."');
 ```
 
-## Example Output
+## Example Outputs
 
 Your exact output will vary, but you should see a series of lines similar to:
 
@@ -162,19 +162,19 @@ He said, "It's fine."
 
 ## What to Submit
 
-- The URL to your CodePen (ensure it’s set to “Public”).
+- The URL to your public CodePen `Ch. 1 - My Name Is`.
 - A note in the Pen description that your console shows the required output.
 
-## Grading (10 pts)
+## Grading (25 pts)
 
-- Uses `console.log()` appropriately (1)
-- Demonstrates number and string values (1)
-- Uses one quote style consistently and escapes same‑quote characters (2)
-- Performs arithmetic with `+`, `-`, `*`, `/` (2)
-- Concatenates strings with `+` (strings only) (1)
-- Demonstrates sequential execution by ordering outputs (1)
-- Includes both `//` and `/* ... */` comments (1)
-- Fix‑me mini‑exercises corrected (1)
+- Uses `console.log()` appropriately (2)
+- Demonstrates number and string values (2)
+- Uses one quote style consistently and escapes same‑quote characters (5)
+- Performs arithmetic with `+`, `-`, `*`, `/` (5)
+- Concatenates strings with `+` (strings only) (3)
+- Demonstrates sequential execution by ordering outputs (3)
+- Includes both `//` and `/* ... */` comments (3)
+- Fix‑me mini‑exercises corrected (2)
 
 ## Tips & Troubleshooting
 
