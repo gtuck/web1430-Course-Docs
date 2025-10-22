@@ -184,6 +184,12 @@ def main(argv=None) -> int:
             result = {'total': 0, 'possible': 25}
             errors = (errors + '; unsupported assignment') if errors else 'unsupported assignment'
 
+        # Build notes summarizing missing items, when available
+        try:
+            notes = ch1.summarize_notes(result.get('checks', [])) if 'checks' in result else ''
+        except Exception:
+            notes = ''
+
         rec.update({
             'total': result.get('total', 0),
             'possible': result.get('possible', 25),
@@ -191,6 +197,7 @@ def main(argv=None) -> int:
             'code_available': result.get('meta', {}).get('code_available', ''),
             'attempt_steps': ';'.join(steps),
             'errors': errors or '',
+            'notes': notes,
         })
         rows.append(rec)
 
@@ -206,7 +213,7 @@ def main(argv=None) -> int:
 
     fieldnames = [
         'file','username','late','student_id','assignment','chapter','best_url','debug_url',
-        'total','possible','captured_lines','code_available','attempt_steps','errors'
+        'total','possible','captured_lines','code_available','attempt_steps','errors','notes'
     ]
     if args.out == '-':
         w = csv.DictWriter(sys.stdout, fieldnames=fieldnames)

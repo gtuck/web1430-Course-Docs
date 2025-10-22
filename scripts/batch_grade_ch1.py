@@ -141,6 +141,7 @@ def main(argv=None) -> int:
                 'code_available': result.get('meta', {}).get('code_available', False),
                 'attempt_steps': ";".join(result.get('_attempt_steps', [])),
                 'errors': result.get('_errors', ''),
+                'notes': grader.summarize_notes(result.get('checks', [])) if result.get('checks') else '',
             })
         except Exception as e:
             rec.update({'total': 0, 'possible': 25, 'errors': str(e)})
@@ -158,7 +159,7 @@ def main(argv=None) -> int:
     # CSV
     fieldnames = [
         'file','username','late','student_id','assignment','student_name',
-        'best_url','debug_url','total','possible','captured_lines','code_available','attempt_steps','errors'
+        'best_url','debug_url','total','possible','captured_lines','code_available','attempt_steps','errors','notes'
     ]
     if args.out == '-':
         w = csv.DictWriter(sys.stdout, fieldnames=fieldnames)
@@ -176,4 +177,3 @@ def main(argv=None) -> int:
 
 if __name__ == '__main__':
     raise SystemExit(main())
-

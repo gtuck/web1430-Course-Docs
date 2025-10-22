@@ -34,6 +34,10 @@ Output
 - Default text report with a breakdown per rubric item, total score, and a console preview.
 - JSON output: add `--out json`.
 
+Notes in Results
+- Each grader includes a Notes section summarizing any missing or partial rubric items.
+- Batch CSVs include a `notes` column with concise reasons for deductions.
+
 Rubric mapping (25 pts)
 - Uses `console.log()` (2)
 - Number and string values (2)
