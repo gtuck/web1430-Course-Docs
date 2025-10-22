@@ -1,4 +1,4 @@
-# Ch. 15 Assignment: Modify Page Structure — DOM Updates & Styles
+# Ch. 15: Modify Page Structure — DOM Updates & Styles
 
 ## Description
 

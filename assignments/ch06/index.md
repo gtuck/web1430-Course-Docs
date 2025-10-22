@@ -1,4 +1,4 @@
-# Ch. 6 Assignment: Objects Lab — Create Your First Objects
+# Ch. 6: Objects Lab — Create Your First Objects
 
 ## Description
 

@@ -1,4 +1,4 @@
-# Ch. 22 Assignment: Use Web APIs — Fetch Real Data
+# Ch. 22: Use Web APIs — Fetch Real Data
 
 ## Description
 

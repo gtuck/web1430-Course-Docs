@@ -1,4 +1,4 @@
-# Ch. 10 Assignment: Batman Movies — Functional Programming Lab
+# Ch. 10: Batman Movies — Functional Programming Lab
 
 ## Description
 

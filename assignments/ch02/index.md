@@ -1,4 +1,4 @@
-# Ch. 2 Assignment: Console Practice — Variables, Swap, Increment
+# Ch. 2: Console Practice — Variables, Swap, Increment
 
 ## Description
 

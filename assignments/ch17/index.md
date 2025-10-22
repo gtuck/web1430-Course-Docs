@@ -1,4 +1,4 @@
-# Ch. 17 Assignment: Forms Lab — Manipulate Forms
+# Ch. 17: Forms Lab — Manipulate Forms
 
 ## Description
 

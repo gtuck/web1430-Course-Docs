@@ -4,7 +4,7 @@ Automated grader for Ch. 1 assignment: Console Skills.
 
 Features:
 - Accepts a CodePen URL and captures console output via Playwright (headless Chromium).
-- Scores the submission against the rubric in assignments/ch-1-assignment.md (25 pts).
+- Scores the submission against the rubric in assignments/ch01/index.md (25 pts).
 - Optional: grade from a local JS file or a newline-delimited log file (offline mode).
 
 Usage examples:

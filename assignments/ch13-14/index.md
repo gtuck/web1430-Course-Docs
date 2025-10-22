@@ -1,4 +1,4 @@
-# Ch. 13 & 14 Assignment: DOM Lab — Discover & Traverse
+# Ch. 13 & 14: DOM Lab — Discover & Traverse
 
 ## Description
 

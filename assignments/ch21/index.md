@@ -1,4 +1,4 @@
-# Ch. 21 Assignment: Query a Web Server — fetch + JSON
+# Ch. 21: Query a Web Server — fetch + JSON
 
 ## Description
 

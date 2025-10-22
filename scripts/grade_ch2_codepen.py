@@ -3,7 +3,7 @@
 Automated grader for Ch. 2 assignment: Console Practice — Variables, Swap, Increment.
 
 Reuses the CodePen capture and fallbacks from grade_ch1_codepen.py. Grades against
-the rubric in assignments/ch-2-assignment.md (25 pts):
+the rubric in assignments/ch02/index.md (25 pts):
 - Temp variable swap works and prints 3 then 5 (8)
 - Arithmetic swap works after reset (5)
 - Correct use of let/const, assignment, and comments (5)

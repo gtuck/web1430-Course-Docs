@@ -1,4 +1,4 @@
-# Ch. 9 Assignment: OOP Lab — Classes, Methods, RPG
+# Ch. 9: OOP Lab — Classes, Methods, RPG
 
 ## Description
 

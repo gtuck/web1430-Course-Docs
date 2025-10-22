@@ -1,4 +1,4 @@
-# Ch. 16 Assignment: React to Events — Interactive Page Lab
+# Ch. 16: React to Events — Interactive Page Lab
 
 ## Description
 

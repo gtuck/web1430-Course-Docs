@@ -1,4 +1,4 @@
-# Ch. 1 Assignment: Console Skills: Quotes, Math, and Messages
+# Ch. 1: Console Skills: Quotes, Math, and Messages
 
 ## Description
 

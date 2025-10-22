@@ -1,4 +1,4 @@
-# Ch. 4 Assignment: Loops Lab — Repeat Statements
+# Ch. 4: Loops Lab — Repeat Statements
 
 ## Description
 

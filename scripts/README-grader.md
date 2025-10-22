@@ -1,6 +1,6 @@
 Ch. 1 Automated Grader
 
-This tool grades student CodePen submissions for the assignment in `assignments/ch-1-assignment.md`.
+This tool grades student CodePen submissions for the assignment in `assignments/ch01/index.md`.
 
 What it does
 - Loads a CodePen URL in a headless browser and captures `console.log()` output.

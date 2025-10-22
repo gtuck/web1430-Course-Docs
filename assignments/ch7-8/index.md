@@ -1,4 +1,4 @@
-# Ch. 7 & 8 Assignment: Arrays and Strings Lab
+# Ch. 7 & 8: Arrays and Strings Lab
 
 ## Description
 

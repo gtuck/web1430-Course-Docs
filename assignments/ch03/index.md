@@ -1,4 +1,4 @@
-# Ch. 3 Assignment: Console Practice — Conditions and Switch
+# Ch. 3: Console Practice — Conditions and Switch
 
 ## Description
 

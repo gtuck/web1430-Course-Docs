@@ -1,4 +1,4 @@
-# Ch. 5 Assignment: Write Functions — Declarations, Arrow, Reuse
+# Ch. 5: Write Functions — Declarations, Arrow, Reuse
 
 ## Description
 
