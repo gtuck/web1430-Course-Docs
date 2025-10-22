@@ -1,4 +1,4 @@
-# Ch. 12: Personal Portfolio One-Pager
+# Ch. 12: Personal Portfolio
 
 ## Description
 
@@ -14,7 +14,7 @@ Create a personal single-page site in CodePen that highlights who you are, what 
 ## Setup (CodePen Only)
 
 - Go to [CodePen.io](https://codepen.io/) and select `Create → New Pen`.
-- Title the pen `Ch. 12 - Personal Portfolio` (or similar).
+- Title the pen `Ch. 12 - Personal Portfolio`.
 - Plan to use the HTML, CSS and JS panels.
 - Optional: In `Settings → CSS`, add Bulma, Tailwind, Bootstrap, or other frameworks if you prefer not to write all styles by hand.
 
