@@ -38,6 +38,7 @@ import grade_ch6_codepen as ch6
 import grade_ch7_8_codepen as ch7_8
 import grade_ch9_codepen as ch9
 import grade_ch10_codepen as ch10
+import grade_ch12_codepen as ch12
 
 
 def detect_chapters(assignment: Optional[str]) -> List[int]:
@@ -180,6 +181,35 @@ def main(argv=None) -> int:
                 result = ch10.grade_ch10(lines, code_js)
             else:
                 result = {'total': 0, 'possible': 25, 'meta': {'captured_lines': 0, 'code_available': bool(code_js)}}
+        elif chapter == 12:
+            css_text = None
+            metrics = None
+            try:
+                snap_metrics, html_text, css_text_candidate, steps2, err2 = ch12.capture_dom_snapshot(url, timeout=args.timeout)
+                if steps2:
+                    steps.extend(steps2)
+                if err2:
+                    errors = (errors + f"; {err2}") if errors else err2
+                if snap_metrics:
+                    metrics = snap_metrics
+                if css_text_candidate:
+                    css_text = css_text_candidate
+                if not metrics and dbg:
+                    snap_metrics, html_text, css_text_candidate, steps3, err3 = ch12.capture_dom_snapshot(dbg, timeout=args.timeout)
+                    if steps3:
+                        steps.extend(steps3)
+                    if err3:
+                        errors = (errors + f"; {err3}") if errors else err3
+                    if snap_metrics:
+                        metrics = snap_metrics
+                    if css_text_candidate:
+                        css_text = css_text_candidate
+            except Exception as e:
+                errors = (errors + f"; ch12 snapshot: {e}") if errors else f"ch12 snapshot: {e}"
+            if metrics:
+                result = ch12.grade_ch12(metrics, css_text, code_js, lines)
+            else:
+                result = {'total': 0, 'possible': 25, 'meta': {'captured_lines': len(lines), 'code_available': bool(code_js), 'errors': 'ch12 metrics unavailable'}}
         else:
             result = {'total': 0, 'possible': 25}
             errors = (errors + '; unsupported assignment') if errors else 'unsupported assignment'

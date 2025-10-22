@@ -56,6 +56,13 @@ Notes
   attempts to click a “Run” button if visible.
 - If network or Playwright isn’t available, use `--from-logs` and optionally `--js`.
 
+Ch. 12 Automated Grader
+
+- `python scripts/grade_ch12_codepen.py --url https://codepen.io/<user>/pen/<slug>`
+- Supports offline grading: `--html`, `--css`, and `--js` inputs.
+- Checks for customized header/tagline, personalized About section, updated project cards, real contact links, and styling/JS polish.
+- Requires Playwright for URL-based grading; install as described above.
+
 Multi-Assignment Grading
 - Batch runner: `scripts/batch_grade.py` detects chapter numbers from Canvas `<h1>` (e.g., "Ch. 2 - …") and dispatches to the correct grader.
 - Currently supported:
@@ -68,6 +75,7 @@ Multi-Assignment Grading
   - Ch. 7 & 8 — `scripts/grade_ch7_8_codepen.py`
   - Ch. 9 — `scripts/grade_ch9_codepen.py`
   - Ch. 10 — `scripts/grade_ch10_codepen.py`
+  - Ch. 12 — `scripts/grade_ch12_codepen.py`
 - Run for a whole folder:
   - `scripts/.venv/bin/python scripts/batch_grade.py --dir Submissions --out grades.csv`
 - Extend for more assignments:
