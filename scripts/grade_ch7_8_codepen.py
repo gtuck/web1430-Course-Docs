@@ -120,6 +120,16 @@ def format_text_report(result: Dict[str, Any]) -> str:
     lines.append("")
     lines.append(f"Captured console lines: {result['meta']['captured_lines']}")
     lines.append(f"JS code available: {result['meta']['code_available']}")
+    # Notes section summarizing any misses/partials
+    checks = result.get('checks', [])
+    misses = [c for c in checks if c.get('score', 0) < c.get('out_of', 0)]
+    lines.append("")
+    lines.append("Notes:")
+    if not misses:
+        lines.append("- All rubric items satisfied.")
+    else:
+        for c in misses:
+            lines.append(f"- {c['name']}: {c['reason']}")
     if result['console_preview']:
         lines.append("")
         lines.append("Console preview (first 50 lines):")
@@ -186,4 +196,3 @@ def main(argv: Optional[List[str]] = None) -> int:
 
 if __name__ == '__main__':
     raise SystemExit(main())
-
