@@ -35,6 +35,9 @@ import grade_ch3_codepen as ch3
 import grade_ch4_codepen as ch4
 import grade_ch5_codepen as ch5
 import grade_ch6_codepen as ch6
+import grade_ch7_8_codepen as ch7_8
+import grade_ch9_codepen as ch9
+import grade_ch10_codepen as ch10
 
 
 def detect_chapters(assignment: Optional[str]) -> List[int]:
@@ -160,6 +163,21 @@ def main(argv=None) -> int:
         elif chapter == 6:
             if lines:
                 result = ch6.grade_ch6(lines, code_js)
+            else:
+                result = {'total': 0, 'possible': 25, 'meta': {'captured_lines': 0, 'code_available': bool(code_js)}}
+        elif chapter in (7, 8):
+            if lines:
+                result = ch7_8.grade_ch7_8(lines, code_js)
+            else:
+                result = {'total': 0, 'possible': 25, 'meta': {'captured_lines': 0, 'code_available': bool(code_js)}}
+        elif chapter == 9:
+            if lines:
+                result = ch9.grade_ch9(lines, code_js)
+            else:
+                result = {'total': 0, 'possible': 25, 'meta': {'captured_lines': 0, 'code_available': bool(code_js)}}
+        elif chapter == 10:
+            if lines:
+                result = ch10.grade_ch10(lines, code_js)
             else:
                 result = {'total': 0, 'possible': 25, 'meta': {'captured_lines': 0, 'code_available': bool(code_js)}}
         else:

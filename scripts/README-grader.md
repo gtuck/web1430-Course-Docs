@@ -61,6 +61,9 @@ Multi-Assignment Grading
   - Ch. 4 — `scripts/grade_ch4_codepen.py`
   - Ch. 5 — `scripts/grade_ch5_codepen.py`
   - Ch. 6 — `scripts/grade_ch6_codepen.py`
+  - Ch. 7 & 8 — `scripts/grade_ch7_8_codepen.py`
+  - Ch. 9 — `scripts/grade_ch9_codepen.py`
+  - Ch. 10 — `scripts/grade_ch10_codepen.py`
 - Run for a whole folder:
   - `scripts/.venv/bin/python scripts/batch_grade.py --dir Submissions --out grades.csv`
 - Extend for more assignments:
