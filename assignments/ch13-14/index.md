@@ -2,7 +2,7 @@
 
 ## Description
 
-Combine Chapters 13 and 14 to practice core DOM skills: understand the DOM tree (element vs text nodes), navigate with `childNodes`/`parentNode`, select elements by tag/class/ID and with CSS selectors, read content and attributes, and work with classes. You’ll complete several small tasks using provided HTML snippets.
+Combine Chapters 13 and 14 to practice core DOM skills: understand the DOM tree (element vs text nodes), navigate with `childNodes`/`parentNode`, select elements by tag/class/ID and with CSS selectors, read content and attributes, and work with classes. You’ll complete several small tasks by extending the Ch. 12 Personal Portfolio page with the additional HTML structures listed below.
 
 ## Learning Objectives
 
@@ -18,17 +18,17 @@ Combine Chapters 13 and 14 to practice core DOM skills: understand the DOM tree 
 - Create a new CodePen named `Ch. 13 & 14 - DOM Lab`.
 - Use both the HTML and JS panels.
 - Open the Console (bottom bar → `Console`).
-- For each task, paste the specific HTML snippet into the HTML panel (replace or comment/uncomment between tasks); put your JavaScript in the JS panel.
+- Start the HTML panel with the base HTML from your Ch. 12 Personal Portfolio project. For each task below, extend that same page by adding the required elements (use the snippets as guidance). Keep the semantic structure from Ch. 12: continue using `<header>`, `<section>`, and `<footer>` elements, and add new sections instead of swapping the entire document. If the necessary structure doesn’t exist yet—like a `<ul>` or new section—add it first before writing the JavaScript.
 
 ## Instructions
 
 Work top‑to‑bottom. For each section:
-- Paste the HTML snippet into the HTML panel.
+- Integrate the described HTML into your Ch. 12 base page (add new `<section>` blocks as needed instead of replacing the entire document).
 - Add the requested JavaScript in the JS panel.
 - Use `console.log()` for normal output and `console.error()` for error messages.
 
 1) Show a node’s child (Ch. 13)
-- HTML snippet:
+- Add a new `<section>` (for example `<section id="dom-child">`) that includes a heading followed by a paragraph or `<div>` so the structure matches:
 
 ```html
 <h1>A title</h1>
@@ -63,7 +63,7 @@ showChild(document.body.childNodes[0], 0); // Wrong node type (likely a text nod
 ```
 
 2) Selecting elements (Ch. 14)
-- Replace the HTML panel with this snippet:
+- Add another `<section>` (e.g., `<section id="dom-wonders">`) that mirrors the following structure so you can query it:
 
 ```html
 <h1>Seven wonders of the world</h1>
@@ -111,7 +111,7 @@ console.log(document.querySelectorAll('#ancient > .exists').length); // Expect 1
 ```
 
 3) Counting elements with CSS selectors (Ch. 14)
-- Replace the HTML panel with this snippet:
+- Add a subsequent `<section>` (such as `<section id="dom-poem">`) that matches this content (you can place it after prior sections):
 
 ```html
 <h1>Mon rêve familier</h1>
@@ -135,7 +135,7 @@ console.log(countElements('p > .adjective')); // 2
 ```
 
 4) Handling attributes (Ch. 14)
-- Replace the HTML panel with this snippet:
+- Within another semantic section (for instance `<section id="dom-instruments">`), add a list of instruments using this structure:
 
 ```html
 <h1>Some musical instruments</h1>
@@ -177,7 +177,7 @@ linkInfo();
 ```
 
 5) Handling classes (Ch. 14)
-- Using the same instruments HTML, add `has(id, someClass)` that logs `true`/`false`, or logs an error via `console.error()` if the element is not found.
+- Using the same instruments HTML inside that `<section>`, add `has(id, someClass)` that logs `true`/`false`, or logs an error via `console.error()` if the element is not found.
 
 ```js
 // 5) has — test if element with id has a class
