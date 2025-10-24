@@ -8,7 +8,7 @@ This repo is a course documentation site (Markdown + Jekyll) plus Python scripts
   - `index.md` — Syllabus (primary landing page)
   - `schedule.md` — Class schedule (single source of truth for the schedule table)
   - `assignments/chXX/index.md` — Per‑chapter assignment pages
-  - `Interviews/*.md`, `images/` — Additional content and assets
+  - `Interviews/XX/index.md`, `images/` — Additional content and assets
 - Grading automation (`scripts/`): per‑chapter graders and batch tools that parse Canvas exports, capture CodePen console output (Playwright), and score against rubrics.
 - Data flow for grading:
   1) Canvas submission HTML → `scripts/parse_canvas_submissions.py` extracts URLs/metadata
@@ -33,9 +33,9 @@ This repo is a course documentation site (Markdown + Jekyll) plus Python scripts
     - `python scripts/grade_ch12_codepen.py --url https://codepen.io/<user>/pen/<slug>`
     - Offline grading supported via `--html`, `--css`, `--js` (see script)
   - Batch grading across a folder:
-    - `scripts/.venv/bin/python scripts/batch_grade.py --dir Submissions --out grades.csv`
+    - `scripts/.venv/bin/python scripts/batch_grade.py --dir submissions --out grades.csv`
   - Parse Canvas submission link pages (pre-step or standalone):
-    - `python scripts/parse_canvas_submissions.py --dir Submissions --format csv --out parsed.csv`
+    - `python scripts/parse_canvas_submissions.py --dir submissions --format csv --out parsed.csv`
 
 ## Project conventions and gotchas
 - Syllabus vs Schedule:
@@ -45,7 +45,8 @@ This repo is a course documentation site (Markdown + Jekyll) plus Python scripts
 - Grader composition:
   - Many graders import shared helpers from `scripts/grade_ch1_codepen.py` (console capture, debug URL, JS simulation). Reuse those helpers for new chapters.
 - Batch router:
-  - `scripts/batch_grade.py` maps `Ch. X` → `scripts/grade_chX_codepen.py`. When adding a new grader, implement `grade_chX(...)` and register it in the batch script.
+  - `scripts/batch_grade.py` maps `Ch. X` → `scripts/grade_chX_codepen.py`. Currently supports Ch. 1-10 and Ch. 12.
+  - When adding a new grader, implement `grade_chX(...)` and register it in the batch script's dispatch logic.
 - Outputs:
   - Graders return a dict with `total`, `possible`, and `notes/meta`. Batch output includes `steps` used to capture (direct/debug/simulated) and any `errors`.
 - Virtual env:
@@ -59,9 +60,13 @@ This repo is a course documentation site (Markdown + Jekyll) plus Python scripts
 - Grading
   - `scripts/README-grader.md` — concrete usage, rubrics, and notes (start here).
   - `scripts/grade_ch1_codepen.py` — shared capture logic and Ch.1 rubric (others import this as `common`).
-  - `scripts/batch_grade.py` — folder runner; dispatch by chapter.
+  - `scripts/grade_ch2_codepen.py` through `scripts/grade_ch10_codepen.py` — chapter-specific graders.
+  - `scripts/grade_ch7_8_codepen.py` — combined grader for chapters 7 & 8.
+  - `scripts/grade_ch12_codepen.py` — portfolio project grader (uses DOM snapshot).
+  - `scripts/batch_grade.py` — folder runner; dispatch by chapter. Supports Ch. 1-10 and Ch. 12.
   - `scripts/parse_canvas_submissions.py` — extract CodePen links and metadata from Canvas HTML.
-  - `Submissions/` — place Canvas HTML link files here; outputs like `grades.csv` are often written to repo root or specified via `--out`.
+  - `scripts/.venv/` — Python virtual environment for dependencies.
+  - `submissions/` — place Canvas HTML link files here; outputs like `grades.csv` are typically written to repo root or specified via `--out`.
 
 ## When making changes
 - Keep assignment text synchronized with grader expectations or update the rubric logic accordingly.
