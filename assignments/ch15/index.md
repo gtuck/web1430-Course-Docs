@@ -18,54 +18,60 @@ Practice Chapter 15 by modifying the DOM after load: update text and attributes,
 - Create a new CodePen named `Ch. 15 - Modify Page Structure`.
 - Use both the HTML and JS panels.
 - Open the Console (bottom bar → `Console`).
-- For each task, paste the provided HTML snippet into the HTML panel; write your JS in the JS panel.
+- Start the HTML panel with the Ch. 12 Personal Portfolio base structure (header, `<section>` blocks, footer). For each task below, extend that same page. Add new semantic `<section>` elements that follow the portfolio’s style rather than replacing the whole document. If a section needs a list or other structure that isn’t present yet, add it before writing the JavaScript.
 
 ## Instructions
 
-Work top‑to‑bottom. Use `console.log()` for normal output and only use `innerHTML` for small snippets where asked; otherwise prefer `createElement()`.
+Work top‑to‑bottom. Use `console.log()` for normal output and only use `innerHTML` for small snippets where asked; otherwise prefer `createElement()`. Each task should live in its own `<section>` so the page stays organized.
 
-1) Add a paragraph with a link (languages page)
-- HTML snippet:
+1) Add a paragraph with a link (languages section)
+- In a new `<section id="ch15-languages">`, mirror the structure below. Use a unique container ID so the JavaScript can target it.
 
 ```html
-<h3 class="beginning">Some languages</h3>
-<div id="content">
-  <ul id="languages">
-    <li id="cpp">C++</li>
-    <li id="java">Java</li>
-    <li id="csharp">C#</li>
-    <li id="php">PHP</li>
-  </ul>
-  <!-- Add a paragraph with a link below using JS -->
-  <!-- Target URL: https://en.wikipedia.org/wiki/List_of_programming_languages -->
-  
-</div>
+<section id="ch15-languages">
+  <h3 class="beginning">Some languages</h3>
+  <div id="languages-content">
+    <ul id="languages">
+      <li id="cpp">C++</li>
+      <li id="java">Java</li>
+      <li id="csharp">C#</li>
+      <li id="php">PHP</li>
+    </ul>
+    <!-- Add a paragraph with a link below using JS -->
+    <!-- Target URL: https://en.wikipedia.org/wiki/List_of_programming_languages -->
+    
+  </div>
+</section>
 ```
 
-- JS: Create a `<p>` with an `<a>` child linking to the URL, then append it after the list.
+- JS: Create a `<p>` with an `<a>` child linking to the URL, then append it after the list inside `#languages-content`.
 
 ```js
 // 1) Add paragraph with link
+const languageContainer = document.getElementById('languages-content');
 const p = document.createElement('p');
 const a = document.createElement('a');
 a.href = 'https://en.wikipedia.org/wiki/List_of_programming_languages';
 a.textContent = 'List of programming languages';
 p.appendChild(a);
-document.getElementById('content').appendChild(p);
+languageContainer.appendChild(p);
 ```
 
 2) Newspaper list (clickable links)
-- Replace HTML with:
+- In another `<section id="ch15-newspapers">`, add the following markup so you have a container ready for the generated list:
 
 ```html
-<h3>Some newspapers</h3>
-<div id="content"></div>
+<section id="ch15-newspapers">
+  <h3>Some newspapers</h3>
+  <div id="newspapers-content"></div>
+</section>
 ```
 
-- JS: Given the array, render a clickable list into `#content` using `createElement()`.
+- JS: Given the array, render a clickable list into `#newspapers-content` using `createElement()`.
 
 ```js
 // 2) Newspaper list
+const newspapersContainer = document.getElementById('newspapers-content');
 const newspapers = [
   'https://www.nytimes.com',
   'https://www.washingtonpost.com',
@@ -82,21 +88,24 @@ newspapers.forEach(url => {
   li.appendChild(link);
   ul.appendChild(li);
 });
-document.getElementById('content').appendChild(ul);
+newspapersContainer.appendChild(ul);
 ```
 
 3) Mini‑dictionary (dl/dt/dd)
-- Replace HTML with:
+- Add a `<section id="ch15-dictionary">` that looks like this:
 
 ```html
-<h3>A mini-dictionary</h3>
-<div id="content"></div>
+<section id="ch15-dictionary">
+  <h3>A mini-dictionary</h3>
+  <div id="dictionary-content"></div>
+</section>
 ```
 
-- JS: Build a `<dl>` where each `term` is a `<dt>` (with `<strong>`) and each `definition` is a `<dd>`.
+- JS: Build a `<dl>` where each `term` is a `<dt>` (with `<strong>`) and each `definition` is a `<dd>`, and append it to `#dictionary-content`.
 
 ```js
 // 3) Mini-dictionary
+const dictionaryContainer = document.getElementById('dictionary-content');
 const words = [
   { term: 'Procrastination', definition: 'Avoidance of doing a task that needs to be accomplished' },
   { term: 'Tautology', definition: 'logical argument constructed in such a way that it is logically irrefutable' },
@@ -114,11 +123,11 @@ words.forEach(({ term, definition }) => {
   dl.appendChild(dt);
   dl.appendChild(dd);
 });
-document.getElementById('content').appendChild(dl);
+dictionaryContainer.appendChild(dl);
 ```
 
 4) Updating colors (ask user, apply styles)
-- Replace HTML with any simple body content or reuse prior snippets.
+- Reuse the existing page content from your earlier sections. No extra HTML is required—your prompts will target `document.body`.
 - JS: Prompt for text color, then background color; update page styles.
 
 ```js
@@ -130,29 +139,31 @@ if (bgColor) document.body.style.backgroundColor = bgColor;
 ```
 
 5) Information about an element (size list)
-- Replace HTML with:
+- Add another section (for example `<section id="ch15-dimensions">`) that includes both the content box and an info container. Keep the inline styles inside a `<style>` block in that section.
 
 ```html
-<div id="content">ABC
-  <br>Easy as
-  <br>One, two, three
-</div>
-<div id="infos"></div>
+<section id="ch15-dimensions">
+  <div id="dimension-content">ABC
+    <br>Easy as
+    <br>One, two, three
+  </div>
+  <div id="dimension-infos"></div>
 
-<style>
-#content {
-  float: right;
-  margin-top: 100px;
-  margin-right: 50px;
-}
-</style>
+  <style>
+    #dimension-content {
+      float: right;
+      margin-top: 100px;
+      margin-right: 50px;
+    }
+  </style>
+</section>
 ```
 
-- JS: Add a list to `#infos` showing the element’s width and height. Use `getComputedStyle()` for values.
+- JS: Add a list to `#dimension-infos` showing the element’s width and height. Use `getComputedStyle()` for values.
 
 ```js
-// 5) Info about #content dimensions
-const box = document.getElementById('content');
+// 5) Info about #dimension-content dimensions
+const box = document.getElementById('dimension-content');
 const styles = getComputedStyle(box);
 const width = styles.width;   // e.g., "300px"
 const height = styles.height; // e.g., "120px"
@@ -164,7 +175,7 @@ const liH = document.createElement('li');
 liH.textContent = `Height: ${height}`;
 ulInfo.appendChild(liW);
 ulInfo.appendChild(liH);
-document.getElementById('infos').appendChild(ulInfo);
+document.getElementById('dimension-infos').appendChild(ulInfo);
 ```
 
 ## Example Outputs
@@ -173,7 +184,7 @@ document.getElementById('infos').appendChild(ulInfo);
 - Newspapers: a list of clickable links opens in a new tab.
 - Mini‑dictionary: a `<dl>` with bold `<dt>` terms and `<dd>` definitions.
 - Colors: page text/background update to the entered values.
-- Info: `#infos` shows two list items for width and height (in px).
+- Info: `#dimension-infos` shows two list items for width and height (in px).
 
 ## What to Submit
 

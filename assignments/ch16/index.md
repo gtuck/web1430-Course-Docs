@@ -17,18 +17,21 @@ Practice Chapter 16 by wiring event listeners, handling keyboard and mouse event
 - Create a new CodePen named `Ch. 16 - React to Events`.
 - Use both the HTML and JS panels.
 - Open the Console (bottom bar → `Console`).
+- Begin with the Ch. 12 Personal Portfolio HTML (header, `<section>` blocks, footer). Add each task below as an additional `<section>` so your page grows without discarding the base layout.
 
 ## Instructions
 
-Work top‑to‑bottom. For each section, place the snippet in the HTML panel (replacing the prior one unless noted) and write the JS in the JS panel.
+Work top‑to‑bottom. For each task, insert the HTML inside a new `<section>` on your existing page (do not replace prior markup) and write the JS in the JS panel.
 
 1) Counting clicks (with deactivate)
-- HTML:
+- Add a `<section id="ch16-click-counter">` that contains this markup:
 
 ```html
-<button id="myButton">Click me!</button>
-<p>You clicked on the button <span id="clickCount">0</span> times</p>
-<button id="deactivate">Deactivate counting</button>
+<section id="ch16-click-counter">
+  <button id="myButton">Click me!</button>
+  <p>You clicked on the button <span id="clickCount">0</span> times</p>
+  <button id="deactivate">Deactivate counting</button>
+</section>
 ```
 
 - JS: Increment count on `#myButton` clicks; `#deactivate` stops counting.
@@ -53,19 +56,21 @@ deactivate.addEventListener('click', () => {
 ```
 
 2) Changing colors by key (R, Y, G, B)
-- HTML:
+- Add another `<section id="ch16-color-keys">` with the following structure:
 
 ```html
-<p>Press the R (red), Y (yellow), G (green) or B (blue) key to change paragraph colors accordingly.</p>
+<section id="ch16-color-keys">
+  <p>Press the R (red), Y (yellow), G (green) or B (blue) key to change paragraph colors accordingly.</p>
 
-<h1>Paragraph 1</h1>
-<div>…content…</div>
+  <h1>Paragraph 1</h1>
+  <div>…content…</div>
 
-<h1>Paragraph 2</h1>
-<div>…content…</div>
+  <h1>Paragraph 2</h1>
+  <div>…content…</div>
 
-<h1>Paragraph 3</h1>
-<div>…content…</div>
+  <h1>Paragraph 3</h1>
+  <div>…content…</div>
+</section>
 ```
 
 - JS: On keyup, set background color for all `div` elements based on key pressed.
@@ -73,7 +78,7 @@ deactivate.addEventListener('click', () => {
 ```js
 // 2) Changing colors
 const setDivBg = (color) => {
-  document.querySelectorAll('div').forEach(d => {
+  document.querySelectorAll('#ch16-color-keys div').forEach(d => {
     d.style.backgroundColor = color;
   });
 };
@@ -88,12 +93,14 @@ document.addEventListener('keyup', (e) => {
 ```
 
 3) Dessert list (add and rename on click)
-- HTML:
+- Create `<section id="ch16-desserts">` and include:
 
 ```html
-<h1>My favourite desserts</h1>
-<ul id="desserts"></ul>
-<button id="addButton">Add a dessert</button>
+<section id="ch16-desserts">
+  <h1>My favourite desserts</h1>
+  <ul id="desserts"></ul>
+  <button id="addButton">Add a dessert</button>
+</section>
 ```
 
 - JS: On “Add a dessert”, prompt for a name and append a new `<li>` with that name. Bonus: clicking an `<li>` prompts to rename it.
@@ -121,10 +128,12 @@ addBtn.addEventListener('click', () => {
 ```
 
 4) Interactive quiz (show answers per question)
-- HTML:
+- Add a final section, such as `<section id="ch16-quiz">`, with a dedicated container for generated content:
 
 ```html
-<div id="content"></div>
+<section id="ch16-quiz">
+  <div id="quiz-content"></div>
+</section>
 ```
 
 - JS: Render each question with a “Show the answer” button that reveals the answer (and replaces the button) when clicked.
@@ -137,7 +146,7 @@ const questions = [
   { statement: 'What occurs twice in a lifetime, but once in every year, twice in a week but never in a day?', answer: 'The E letter' }
 ];
 
-const container = document.getElementById('content');
+const quizContainer = document.getElementById('quiz-content');
 
 questions.forEach(q => {
   const wrapper = document.createElement('div');
@@ -152,7 +161,7 @@ questions.forEach(q => {
   });
   wrapper.appendChild(p);
   wrapper.appendChild(btn);
-  container.appendChild(wrapper);
+  quizContainer.appendChild(wrapper);
 });
 ```
 

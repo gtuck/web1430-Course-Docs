@@ -17,17 +17,20 @@ Practice Chapter 22 by consuming real web APIs with `fetch()`: parse JSON, rende
 - Create a new CodePen named `Ch. 22 - Use Web APIs`.
 - Use HTML and JS panels (optional CSS for light styling).
 - Open the Console (bottom bar → `Console`).
+- Begin with the Ch. 12 Personal Portfolio HTML. Add each API task inside a dedicated `<section>` so your portfolio layout persists.
 
 ## Instructions
 
-Work top‑to‑bottom. For each section, place the snippet in the HTML panel and write the JS in the JS panel.
+Work top‑to‑bottom. For each section, insert the HTML inside a new `<section>` on your existing page and write the JS in the JS panel.
 
 1) More beer please (Punk API)
-- HTML:
+- Create `<section id="ch22-beer">` with this markup:
 
 ```html
-<button id="grabButton">Grab a beer</button>
-<div id="beer"></div>
+<section id="ch22-beer">
+  <button id="grabButton">Grab a beer</button>
+  <div id="beer"></div>
+</section>
 ```
 
 - JS: On click, fetch a random beer and display name, description, ABV, volume (with units), and first_brewed. Clear previous result before rendering.
@@ -57,13 +60,15 @@ document.getElementById('grabButton').addEventListener('click', grabRandomBeer);
 ```
 
 2) GitHub profile lookup (GitHub Users API)
-- HTML:
+- Add another section, e.g. `<section id="ch22-github">`, containing:
 
 ```html
-<h2>GitHub Profile</h2>
-<input id="login" type="text" placeholder="Enter GitHub login" />
-<button id="loadProfile">Load Profile</button>
-<div id="profile"></div>
+<section id="ch22-github">
+  <h2>GitHub Profile</h2>
+  <input id="login" type="text" placeholder="Enter GitHub login" />
+  <button id="loadProfile">Load Profile</button>
+  <div id="profile"></div>
+</section>
 ```
 
 - JS: On click, fetch `https://api.github.com/users/{login}`. Show avatar, name (or login), and website/blog link if present. Handle 404 with a friendly message.
@@ -110,12 +115,14 @@ document.getElementById('loadProfile').addEventListener('click', () => {
 ```
 
 3) Star Wars planets (SWAPI)
-- HTML:
+- Insert `<section id="ch22-planets">` with link and info containers:
 
 ```html
-<h2>Some Star Wars planets</h2>
-<div id="links"></div>
-<div id="infos"></div>
+<section id="ch22-planets">
+  <h2>Some Star Wars planets</h2>
+  <div id="links"></div>
+  <div id="infos"></div>
+</section>
 ```
 
 - JS: Generate links for planet IDs 1–10. Clicking a link fetches `https://swapi.dev/api/planets/{id}/` and displays name, climate, terrain, and population. Prevent default link navigation.

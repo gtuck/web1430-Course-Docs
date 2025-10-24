@@ -17,36 +17,39 @@ Practice Chapter 17 by handling form inputs in the browser: read and validate va
 - Create a new CodePen named `Ch. 17 - Forms Lab`.
 - Use the HTML and JS panels (optional CSS panel for the autocomplete styles).
 - Open the Console (bottom bar → `Console`) for any logs.
+- Start from the Ch. 12 Personal Portfolio HTML. Add each form task inside a fresh `<section>` so your base layout remains intact while you extend it.
 
 ## Instructions
 
-Work top‑to‑bottom. For each task, place the provided HTML (and CSS if any) into the HTML (or CSS) panel; write your JavaScript in the JS panel.
+Work top‑to‑bottom. For each task, drop the provided markup into a new `<section>` on the page (keep existing sections) and write your JavaScript in the JS panel.
 
 1) Password checker (submit validation)
-- HTML:
+- Create `<section id="ch17-password-checker">` with this form (note the `id` on the form):
 
 ```html
-<form>
-  <p>
-    <label for="password1">Enter the password</label>:
-    <input type="password" name="password1" id="password1" required>
-  </p>
-  <p>
-    <label for="password2">Confirm the password</label>:
-    <input type="password" name="password2" id="password2" required>
-  </p>
+<section id="ch17-password-checker">
+  <form id="password-form">
+    <p>
+      <label for="password1">Enter the password</label>:
+      <input type="password" name="password1" id="password1" required>
+    </p>
+    <p>
+      <label for="password2">Confirm the password</label>:
+      <input type="password" name="password2" id="password2" required>
+    </p>
 
-  <input type="submit" value="Send">
-</form>
+    <input type="submit" value="Send">
+  </form>
 
-<p id="passwordHelp"></p>
+  <p id="passwordHelp"></p>
+</section>
 ```
 
 - JS: Validate on submit; rules: passwords equal, min length 6, at least one digit. Show a message in `#passwordHelp` and color it; prevent default submission in CodePen.
 
 ```js
 // 1) Password checker
-const form = document.querySelector('form');
+const form = document.getElementById('password-form');
 const help = document.getElementById('passwordHelp');
 
 form.addEventListener('submit', (e) => {
@@ -70,18 +73,20 @@ form.addEventListener('submit', (e) => {
 ```
 
 2) Character list (populate select and show characters)
-- HTML:
+- Add `<section id="ch17-characters">` with the following markup:
 
 ```html
-<h1>A few of the Game of Thrones characters</h1>
-<form>
-  <label for="house">House</label>:
-  <select name="house" id="house">
-    <option value="" selected>Select a house</option>
-  </select>
-</form>
+<section id="ch17-characters">
+  <h1>A few of the Game of Thrones characters</h1>
+  <form>
+    <label for="house">House</label>:
+    <select name="house" id="house">
+      <option value="" selected>Select a house</option>
+    </select>
+  </form>
 
-<ul id="characters"></ul>
+  <ul id="characters"></ul>
+</section>
 ```
 
 - JS: Fill the house dropdown on load; update the character list when a house is selected.
@@ -129,21 +134,23 @@ houseSelect.addEventListener('change', (e) => {
 ```
 
 3) Autocomplete (countries starting with “A”)
-- HTML:
+- Insert `<section id="ch17-autocomplete">` with the input, suggestion area, and inline styles:
 
 ```html
-<label for="country">Enter a country name</label>:
-<input type="text" id="country">
-<div id="suggestions"></div>
+<section id="ch17-autocomplete">
+  <label for="country">Enter a country name</label>:
+  <input type="text" id="country">
+  <div id="suggestions"></div>
 
-<style>
-/* Add spacing between each country suggestion */
-.suggestion { padding-left: 2px; padding-right: 2px; }
-/* Change suggestion color when hovering it with the mouse */
-.suggestion:hover { background-color: #adf; cursor: pointer; }
-/* Position the suggestion list just below the input box */
-#suggestions { position: absolute; border: 1px solid black; left: 155px; }
-</style>
+  <style>
+    /* Add spacing between each country suggestion */
+    .suggestion { padding-left: 2px; padding-right: 2px; }
+    /* Change suggestion color when hovering it with the mouse */
+    .suggestion:hover { background-color: #adf; cursor: pointer; }
+    /* Position the suggestion list just below the input box */
+    #suggestions { position: absolute; border: 1px solid black; left: 155px; }
+  </style>
+</section>
 ```
 
 - JS: As the user types, show matching countries below; clicking a suggestion fills the input and clears suggestions.

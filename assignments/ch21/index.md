@@ -17,25 +17,28 @@ Practice Chapter 21 by fetching remote resources asynchronously with `fetch()`, 
 - Create a new CodePen named `Ch. 21 - Query a Web Server`.
 - Use HTML and JS panels (no build tools required).
 - Open the Console (bottom bar → `Console`) for debugging.
+- Start from your Ch. 12 Personal Portfolio HTML. Add the fetch lab content as new `<section>` blocks so the page retains its semantic structure.
 
 ## Instructions
 
-Add this HTML in your HTML panel:
+Add a new `<section id="ch21-fetch">` to your page that contains the elements you’ll populate with fetch results:
 
 ```html
-<h2>A few programming languages</h2>
-<ul id="languageList"></ul>
+<section id="ch21-fetch">
+  <h2>A few programming languages</h2>
+  <ul id="languageList"></ul>
 
-<h2>Some famous paintings</h2>
-<table id="paintings">
-  <tr>
-    <th>Name</th>
-    <th>Year</th>
-    <th>Artist</th>
-  </tr>
-  <!-- rows will be appended here by JS -->
-  
-</table>
+  <h2>Some famous paintings</h2>
+  <table id="paintings">
+    <tr>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Artist</th>
+    </tr>
+    <!-- rows will be appended here by JS -->
+    
+  </table>
+</section>
 ```
 
 1) Language list (fetch text)
