@@ -2,7 +2,7 @@
 **Department:** School of Computing  
 **Credits:** 3  
 **Delivery Mode:** Synchronous Virtual (Zoom)  
-**Meeting Times:** M, W, F – 9:30–10:20 am  
+**Meeting Times:** M, W, F – 10:30–11:20 am  
 **Location:** Virtual Classroom (Zoom in Canvas)  
 **Prerequisites:** (WEB 1400 or CS 1030) and CS 1400.  
 
